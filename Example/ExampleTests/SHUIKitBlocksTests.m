@@ -74,4 +74,10 @@
   
 }
 
+-(void)testSHGestureRecognizerBlocks ;{
+  STAssertTrue([UITapGestureRecognizer.new
+                respondsToSelector:@selector(SH_addBlock:)], nil);
+  
+}
+
 @end

@@ -1,0 +1,5 @@
+#include "Pods-SHGestureRecognizerBlocks.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/SHGestureRecognizerBlocks" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/KIF-next" "${PODS_ROOT}/Headers/SHActionSheetBlocks" "${PODS_ROOT}/Headers/SHAlertViewBlocks" "${PODS_ROOT}/Headers/SHBarButtonItemBlocks" "${PODS_ROOT}/Headers/SHControlBlocks" "${PODS_ROOT}/Headers/SHFastEnumerationProtocols" "${PODS_ROOT}/Headers/SHGestureRecognizerBlocks" "${PODS_ROOT}/Headers/SHNavigationControllerBlocks" "${PODS_ROOT}/Headers/SHObjectUserInfo" "${PODS_ROOT}/Headers/SHPopoverControllerBlocks" "${PODS_ROOT}/Headers/SHSegueBlocks" "${PODS_ROOT}/Headers/SHTestCaseAdditions" "${PODS_ROOT}/Headers/SHUIKitBlocks" "${PODS_ROOT}/Headers/SHWebViewBlocks"
+OTHER_LDFLAGS = -ObjC
+PODS_ROOT = ${SRCROOT}
