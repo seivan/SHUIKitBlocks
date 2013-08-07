@@ -18,6 +18,20 @@
 - [SHMessageUIBlocks](https://github.com/seivan/SHMessageUIBlocks)
 
 
+##Setup
+######Install
+```ruby
+pod 'SHUIKitBlocks'
+```
+######Use
+Per Library
+```objective-c
+#import "<UIClass>+<SHCategory>.h"
+```
+For everything
+```objective-c
+#import "SHUIKitBlocks.h"
+```
 ##Dependency Status
 
 | Library        | Tests           | Version  | Platform  |
