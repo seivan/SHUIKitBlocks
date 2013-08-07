@@ -20,13 +20,14 @@
 
 ##Dependency Status
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| [SHFastEnumerationProtocols](https://github.com/seivan/SHFastEnumerationProtocols)      | [![Build Status](https://travis-ci.org/seivan/SHUIKitBlocks.png?branch=master)](https://travis-ci.org/seivan/SHUIKitBlocks) | [![Platform](http://cocoapod-badges.herokuapp.com/p/SHUIKitBlocks/badge.png)](http://cocoadocs.org/docsets/SHUIKitBlocks) |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Library        | Tests           | Version  | Platform  |
+| ------------- |:-------------:| -----:|  -----:| 
+| [SHFastEnumerationProtocols](https://github.com/seivan/SHFastEnumerationProtocols)| [![Build Status](https://travis-ci.org/seivan/SHUIKitBlocks.png?branch=master)](https://travis-ci.org/seivan/SHUIKitBlocks)| [![Version](http://cocoapod-badges.herokuapp.com/v/SHUIKitBlocks/badge.png)](http://cocoadocs.org/docsets/SHUIKitBlocks) | [![Platform](http://cocoapod-badges.herokuapp.com/p/SHUIKitBlocks/badge.png)](http://cocoadocs.org/docsets/SHUIKitBlocks)
+ |
+| col 2 is      | centered      |   $12 | $12 |
+| zebra stripes | are neat      |    $1 | $1 |
 
-######- [SHFastEnumerationProtocols](https://github.com/seivan/SHFastEnumerationProtocols)
+[SHFastEnumerationProtocols](https://github.com/seivan/SHFastEnumerationProtocols)
 [![Build Status](https://travis-ci.org/seivan/SHUIKitBlocks.png?branch=master)](https://travis-ci.org/seivan/SHUIKitBlocks)
 [![Version](http://cocoapod-badges.herokuapp.com/v/SHUIKitBlocks/badge.png)](http://cocoadocs.org/docsets/SHUIKitBlocks)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/SHUIKitBlocks/badge.png)](http://cocoadocs.org/docsets/SHUIKitBlocks)
