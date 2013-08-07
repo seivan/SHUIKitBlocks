@@ -17,6 +17,10 @@
 - [SHGameCenter](https://github.com/seivan/SHGameCenter)
 - [SHMessageUIBlocks](https://github.com/seivan/SHMessageUIBlocks)
 
+##Install
+```ruby
+pod 'SHUIKitBlocks'
+```
 
 ##Dependency Status
 
@@ -32,6 +36,20 @@
 | [SHActionSheetBlocks](https://github.com/seivan/SHActionSheetBlocks)| [![Build Status](https://travis-ci.org/seivan/SHActionSheetBlocks.png?branch=master)](https://travis-ci.org/seivan/SHActionSheetBlocks)| [![Version](http://cocoapod-badges.herokuapp.com/v/SHActionSheetBlocks/badge.png)](http://cocoadocs.org/docsets/SHActionSheetBlocks) | [![Platform](http://cocoapod-badges.herokuapp.com/p/SHActionSheetBlocks/badge.png)](http://cocoadocs.org/docsets/SHActionSheetBlocks) |
 | [SHGestureRecognizerBlocks](https://github.com/seivan/SHGestureRecognizerBlocks)| [![Build Status](https://travis-ci.org/seivan/SHGestureRecognizerBlocks.png?branch=master)](https://travis-ci.org/seivan/SHGestureRecognizerBlocks)| [![Version](http://cocoapod-badges.herokuapp.com/v/SHGestureRecognizerBlocks/badge.png)](http://cocoadocs.org/docsets/SHGestureRecognizerBlocks) | [![Platform](http://cocoapod-badges.herokuapp.com/p/SHGestureRecognizerBlocks/badge.png)](http://cocoadocs.org/docsets/SHGestureRecognizerBlocks) |
 
+
+##Import
+
+>Per Library
+
+```objective-c
+#import "<UIClass>+<SHCategory>.h"
+```
+
+>For everything
+
+```objective-c
+#import "SHUIKitBlocks.h"
+```
 
 ##Contact
 
