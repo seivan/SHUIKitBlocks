@@ -20,6 +20,9 @@
 
 ##Dependency Status
 - [SHFastEnumerationProtocols](https://github.com/seivan/SHFastEnumerationProtocols)
+[![Build Status](https://travis-ci.org/seivan/SHUIKitBlocks.png?branch=master)](https://travis-ci.org/seivan/SHUIKitBlocks)
+[![Version](http://cocoapod-badges.herokuapp.com/v/SHUIKitBlocks/badge.png)](http://cocoadocs.org/docsets/SHUIKitBlocks)
+[![Platform](http://cocoapod-badges.herokuapp.com/p/SHUIKitBlocks/badge.png)](http://cocoadocs.org/docsets/SHUIKitBlocks)
 
 
 ##Contact
