@@ -1,0 +1,2 @@
+PODS_EXAMPLETESTS_KIF_NEXT_FRAMEWORK_SEARCH_PATHS = $(inherited) "$(SDKROOT)/Developer/Library/Frameworks" "$(DEVELOPER_LIBRARY_DIR)/Frameworks"
+PODS_EXAMPLETESTS_KIF_NEXT_OTHER_LDFLAGS = -framework CoreGraphics -framework SenTestingKit

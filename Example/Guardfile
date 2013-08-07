@@ -1,0 +1,8 @@
+# A sample Guardfile
+# More info at https://github.com/guard/guard#readme
+
+
+guard 'xctool-test', :cli => '-workspace Example.xcworkspace -scheme Example test -simulator iphone -sdk iphonesimulator' do
+  watch(%r{Example/(.+)\.(m|mm)$})
+  watch(%r{ExampleTests/(.+)\.(m|mm)$})
+end

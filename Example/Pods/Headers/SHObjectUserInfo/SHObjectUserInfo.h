@@ -1,0 +1,1 @@
+../../SHObjectUserInfo/SHObjectUserInfo/SHObjectUserInfo.h

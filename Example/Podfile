@@ -1,0 +1,11 @@
+platform :ios, '6.0' 
+pod 'SHSegueBlocks', :git => "https://github.com/seivan/SHSegueBlocks"
+pod 'SHUIKitBlocks', :path => '../'
+
+
+
+target :ExampleTests do
+  pod 'SHTestCaseAdditions'
+  pod 'SHFastEnumerationProtocols'
+  pod "KIF-next"
+end

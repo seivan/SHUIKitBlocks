@@ -1,0 +1,53 @@
+PODS:
+  - KIF-next (2.0.0pre4)
+  - SHActionSheetBlocks (2.2.0)
+  - SHAlertViewBlocks (1.1.0)
+  - SHBarButtonItemBlocks (1.1.0)
+  - SHControlBlocks (1.0.1)
+  - SHFastEnumerationProtocols (1.2.0)
+  - SHNavigationControllerBlocks (1.0.0)
+  - SHObjectUserInfo (1.1.0)
+  - SHPopoverControllerBlocks (1.1.0)
+  - SHSegueBlocks (1.2.0):
+    - SHObjectUserInfo (~> 1.1.0)
+  - SHTestCaseAdditions (1.0.0)
+  - SHUIKitBlocks (1.0.0):
+    - SHActionSheetBlocks (~> 2.2.0)
+    - SHAlertViewBlocks (~> 1.1.0)
+    - SHBarButtonItemBlocks (~> 1.1.0)
+    - SHControlBlocks (~> 1.0.0)
+    - SHNavigationControllerBlocks (~> 1.0.0)
+    - SHPopoverControllerBlocks (~> 1.1.0)
+    - SHSegueBlocks (~> 1.2.0)
+    - SHWebViewBlocks (~> 1.1.0)
+  - SHWebViewBlocks (1.1.0)
+
+DEPENDENCIES:
+  - KIF-next
+  - SHFastEnumerationProtocols
+  - SHSegueBlocks (from `https://github.com/seivan/SHSegueBlocks`)
+  - SHTestCaseAdditions
+  - SHUIKitBlocks (from `../`)
+
+EXTERNAL SOURCES:
+  SHSegueBlocks:
+    :git: https://github.com/seivan/SHSegueBlocks
+  SHUIKitBlocks:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KIF-next: 1c59f919ceee5999373c875832101c2fb48b5f59
+  SHActionSheetBlocks: 2656692a5da00e3f4a310e8fcfff4731f5afd594
+  SHAlertViewBlocks: ba88a9c577c521ed79443771f7422ed555778a16
+  SHBarButtonItemBlocks: 9a46094653b708ee34d0667f78e0f3d46a550ab5
+  SHControlBlocks: 3cd5cb4e8a127e416da89569ea0d5156a9e09c19
+  SHFastEnumerationProtocols: 5dde0d343a6bf08bf43ec5db2e6dcd9505c50d06
+  SHNavigationControllerBlocks: 97d2f424fe21ca47ab1c212bf904db36c72fd582
+  SHObjectUserInfo: 3dfe4af11a45c985088f613813705b8ebd3cc718
+  SHPopoverControllerBlocks: b6465af4af808240d56fc8144ce6565f2d256f45
+  SHSegueBlocks: 9acc4d9d5f588933693b594cb07dfce4e2c42d2a
+  SHTestCaseAdditions: c19f82ab9f4963261ae1540eb1845146f24b2ff2
+  SHUIKitBlocks: f5098a26451e3ba472c03f5f29d7d33cf8b91e7a
+  SHWebViewBlocks: 41ed6cfdc3f31124a4a92c52b2603d9bd4e40310
+
+COCOAPODS: 0.22.3

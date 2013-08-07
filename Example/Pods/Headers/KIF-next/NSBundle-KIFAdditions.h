@@ -1,0 +1,1 @@
+../../KIF-next/Additions/NSBundle-KIFAdditions.h
