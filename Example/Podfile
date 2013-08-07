@@ -1,5 +1,5 @@
 platform :ios, '6.0' 
-pod 'SHSegueBlocks', :git => "https://github.com/seivan/SHSegueBlocks"
+#pod 'SHSegueBlocks', :git => "https://github.com/seivan/SHSegueBlocks"
 pod 'SHUIKitBlocks', :path => '../'
 
 
