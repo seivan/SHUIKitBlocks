@@ -19,7 +19,7 @@
 
 
 ##Dependency Status
-
+- [SHFastEnumerationProtocols](https://github.com/seivan/SHFastEnumerationProtocols)
 
 
 ##Contact
