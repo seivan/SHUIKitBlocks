@@ -50,6 +50,7 @@ Pod::Spec.new do |s|
   s.dependency  "SHPopoverControllerBlocks",     '~> 1.1.0'
   s.dependency  "SHBarButtonItemBlocks",         '~> 1.1.0'
   s.dependency  "SHActionSheetBlocks",           '~> 2.2.0'
+  s.dependency  "SHGestureRecognizerBlocks",     '~> 1.0.0'
   
   s.platform  = :ios, "6.0"
   s.source_files = source_files
