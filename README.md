@@ -23,7 +23,6 @@
 | Library        | Tests           | Version  | Platform  |
 | ------------- |:-------------:| -----:|  -----:| 
 | [SHAlertViewBlocks](https://github.com/seivan/SHAlertViewBlocks)| [![Build Status](https://travis-ci.org/seivan/SHAlertViewBlocks.png?branch=master)](https://travis-ci.org/seivan/SHAlertViewBlocks)| [![Version](http://cocoapod-badges.herokuapp.com/v/SHAlertViewBlocks/badge.png)](http://cocoadocs.org/docsets/SHAlertViewBlocks) | [![Platform](http://cocoapod-badges.herokuapp.com/p/SHAlertViewBlocks/badge.png)](http://cocoadocs.org/docsets/SHAlertViewBlocks) |
-
 | [SHControlBlocks](https://github.com/seivan/SHControlBlocks)| [![Build Status](https://travis-ci.org/seivan/SHControlBlocks.png?branch=master)](https://travis-ci.org/seivan/SHControlBlocks)| [![Version](http://cocoapod-badges.herokuapp.com/v/SHControlBlocks/badge.png)](http://cocoadocs.org/docsets/SHControlBlocks) | [![Platform](http://cocoapod-badges.herokuapp.com/p/SHControlBlocks/badge.png)](http://cocoadocs.org/docsets/SHControlBlocks) |
 
 | [SHSegueBlocks](https://github.com/seivan/SHSegueBlocks)| [![Build Status](https://travis-ci.org/seivan/SHSegueBlocks.png?branch=master)](https://travis-ci.org/seivan/SHSegueBlocks)| [![Version](http://cocoapod-badges.herokuapp.com/v/SHSegueBlocks/badge.png)](http://cocoadocs.org/docsets/SHSegueBlocks) | [![Platform](http://cocoapod-badges.herokuapp.com/p/SHSegueBlocks/badge.png)](http://cocoadocs.org/docsets/SHSegueBlocks) |
