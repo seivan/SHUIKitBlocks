@@ -1,11 +1,14 @@
 # SHUIKitBlocks
-**Prefixed Blocks for UIKit on categories _without_ libffi and swizzling
-
-============
 
 [![Build Status](https://travis-ci.org/seivan/SHUIKitBlocks.png?branch=master)](https://travis-ci.org/seivan/SHUIKitBlocks)
 [![Version](http://cocoapod-badges.herokuapp.com/v/SHUIKitBlocks/badge.png)](http://cocoadocs.org/docsets/SHUIKitBlocks)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/SHUIKitBlocks/badge.png)](http://cocoadocs.org/docsets/SHUIKitBlocks)
+
+
+**Prefixed Blocks for UIKit on categories _without_ libffi and swizzling
+
+============
+
 
 `SHUIKitBlocks` allows you to use blocks instead of delegates for entire UIKit without any hacks or libffi dependencies. 
 
