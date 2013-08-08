@@ -42,7 +42,7 @@ pod 'SHUIKitBlocks'
 >Per Library
 
 ```objective-c
-#import "<UIClass>+<SHCategory>.h"
+#import "<Library>.h"
 ```
 
 >For everything
