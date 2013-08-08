@@ -12,10 +12,12 @@
 
 > This pod is part of a many components covering to plug the holes missing from Foundation, UIKit, CoreLocation, GameKit, MapKit and other aspects of an iOS application's architecture. 
 
-- [SHFastEnumerationProtocols](https://github.com/seivan/SHFastEnumerationProtocols)
-- [SHKeyValueObserverBlocks](https://github.com/seivan/SHKeyValueObserverBlocks)
+- [SHFoundationAdditions](https://github.com/seivan/SHFoundationAdditions)
 - [SHGameCenter](https://github.com/seivan/SHGameCenter)
 - [SHMessageUIBlocks](https://github.com/seivan/SHMessageUIBlocks)
+- [SHFastEnumerationProtocols](https://github.com/seivan/SHFastEnumerationProtocols)
+- [SHKeyValueObserverBlocks](https://github.com/seivan/SHKeyValueObserverBlocks)
+
 
 ##Install
 ```ruby
