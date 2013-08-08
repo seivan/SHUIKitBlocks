@@ -15,8 +15,6 @@
 - [SHFoundationAdditions](https://github.com/seivan/SHFoundationAdditions)
 - [SHGameCenter](https://github.com/seivan/SHGameCenter)
 - [SHMessageUIBlocks](https://github.com/seivan/SHMessageUIBlocks)
-- [SHFastEnumerationProtocols](https://github.com/seivan/SHFastEnumerationProtocols)
-- [SHKeyValueObserverBlocks](https://github.com/seivan/SHKeyValueObserverBlocks)
 
 
 ##Install
