@@ -8,3 +8,4 @@
 #import "UIViewController+SHSegueBlocks.h"
 #import "UIWebView+SHWebViewBlocks.h"
 #import "UIGestureRecognizer+SHGestureRecognizerBlocks.h"
+#import "UITextField+SHTextFieldBlocks.h"

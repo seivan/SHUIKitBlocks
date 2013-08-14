@@ -80,4 +80,10 @@
   
 }
 
+-(void)testSHTextFieldBlocks ;{
+  STAssertTrue([UITextField.new
+                respondsToSelector:@selector(SH_setShouldBeginEditingBlock:)], nil);
+  
+}
+
 @end

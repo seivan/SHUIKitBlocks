@@ -34,9 +34,25 @@
 }
 
 
--(void)SH_concurrentEach:(SHIteratorBlock)theBlock; { NSParameterAssert(theBlock);
+-(void)SH_concurrentEach:(SHIteratorBlock)theBlock onComplete:(SHIteratorBlock)theCompleteBlock; { NSParameterAssert(theBlock);
 
-  [self enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id obj, NSUInteger _, BOOL *__) { theBlock(obj); }];
+  dispatch_group_t group = dispatch_group_create();
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+    [self SH_each:^(id obj) {
+      dispatch_group_enter(group);
+
+      dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        theBlock(obj);
+        dispatch_group_leave(group);
+      });
+      
+    }];
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+      theCompleteBlock(self);
+    });
+    
+  });
+
 }
 
 -(instancetype)SH_map:(SHIteratorReturnIdBlock)theBlock; { NSParameterAssert(theBlock);
@@ -58,7 +74,7 @@
 
 }
 
--(id)SH_find:(SHIteratorReturnTruthBlock)theBlock; { NSParameterAssert(theBlock);
+-(id)SH_find:(SHIteratorPredicateBlock)theBlock; { NSParameterAssert(theBlock);
   id value = nil;
   
 	NSInteger index = [self indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) { return theBlock(obj); }];
@@ -69,26 +85,26 @@
 
 }
 
--(instancetype)SH_findAll:(SHIteratorReturnTruthBlock)theBlock; { NSParameterAssert(theBlock);
+-(instancetype)SH_findAll:(SHIteratorPredicateBlock)theBlock; { NSParameterAssert(theBlock);
   return [self objectsAtIndexes:
           [self indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger _, BOOL *__) {
 		return theBlock(obj);
 	}]];
 }
 
--(instancetype)SH_reject:(SHIteratorReturnTruthBlock)theBlock; { NSParameterAssert(theBlock);
+-(instancetype)SH_reject:(SHIteratorPredicateBlock)theBlock; { NSParameterAssert(theBlock);
   return [self SH_findAll:^BOOL(id obj) { return theBlock(obj) == NO; }];
 }
 
--(BOOL)SH_all:(SHIteratorReturnTruthBlock)theBlock; { NSParameterAssert(theBlock);
+-(BOOL)SH_all:(SHIteratorPredicateBlock)theBlock; { NSParameterAssert(theBlock);
   return [self SH_findAll:theBlock].count == self.count;
 }
 
--(BOOL)SH_any:(SHIteratorReturnTruthBlock)theBlock; { NSParameterAssert(theBlock);
+-(BOOL)SH_any:(SHIteratorPredicateBlock)theBlock; { NSParameterAssert(theBlock);
   return [self SH_find:theBlock] != nil;
 }
 
--(BOOL)SH_none:(SHIteratorReturnTruthBlock)theBlock; { NSParameterAssert(theBlock);
+-(BOOL)SH_none:(SHIteratorPredicateBlock)theBlock; { NSParameterAssert(theBlock);
   return [self SH_all:theBlock] == NO;
 }
 
@@ -204,11 +220,11 @@
 	[self setArray: [self SH_map:theBlock]];
 }
 
--(void)SH_modifyFindAll:(SHIteratorReturnTruthBlock)theBlock; { NSParameterAssert(theBlock);
+-(void)SH_modifyFindAll:(SHIteratorPredicateBlock)theBlock; { NSParameterAssert(theBlock);
   [self setArray:[self SH_findAll:theBlock]];
 }
 
--(void)SH_modifyReject:(SHIteratorReturnTruthBlock)theBlock; { NSParameterAssert(theBlock);
+-(void)SH_modifyReject:(SHIteratorPredicateBlock)theBlock; { NSParameterAssert(theBlock);
   [self setArray:[self SH_reject:theBlock]];
 }
 
