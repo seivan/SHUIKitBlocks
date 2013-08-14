@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 
   s.name         = name
   s.version      = version
-  s.summary      = "Prefixed Blocks for UIKit on categories *without* libffi and swizzling"
+  s.summary      = "Prefixed Blocks for UIKit on categories *without* libffi and swizzling."
   s.description  = <<-DESC
 
                     Prefixed Blocks for UIKit on categories *without* libffi and swizzling.
