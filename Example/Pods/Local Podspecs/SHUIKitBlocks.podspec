@@ -2,26 +2,29 @@ Pod::Spec.new do |s|
   name           = "SHUIKitBlocks"
   url            = "https://github.com/seivan/#{name}"
   git_url        = "#{url}.git"
-  version        = "1.2.0"
+  version        = "1.3.0"
   source_files   = "#{name}/**/*.{h,m}"
 
   s.name         = name
   s.version      = version
-  s.summary      = "Prefixed Blocks for UIKit on categories *without* libffi and swizzling"
+  s.summary      = "Prefixed Blocks for UIKit on categories *without* libffi and swizzling."
   s.description  = <<-DESC
 
                     Prefixed Blocks for UIKit on categories *without* libffi and swizzling.
                     Blocks are hold with a weak reference so you don't have to cleanup when your object is gone. Comes with tests. 
 
                     Contains: 
-                    * SHAlertViewBlocks
-                    * SHControlBlocks
-                    * SHSegueBlocks
-                    * SHNavigationControllerBlocks
-                    * SHWebViewBlocks
-                    * SHPopoverControllerBlocks
-                    * SHBarButtonItemBlocks 
-                    * SHActionSheetBlocks
+                    * SHAlertViewBlocks             => UIAlertView
+                    * SHControlBlocks               => UIControl
+                    * SHSegueBlocks                 => UIStoryboardSegue
+                    * SHNavigationControllerBlocks  => UINavigationController
+                    * SHWebViewBlocks               => UIWebView
+                    * SHPopoverControllerBlocks     => UIPopoverController
+                    * SHBarButtonItemBlocks         => UIBarButtonItem
+                    * SHActionSheetBlocks           => UIActionSheet
+                    * SHGestureRecognizerBlocks     => UIGestureRecognizer
+                    * SHTextFieldBlocks             => UITextField
+                    * SHTextViewBlocks              => UITextView 
 
                     Summary:
                     * Swizzle and junk free
@@ -52,6 +55,8 @@ Pod::Spec.new do |s|
   s.dependency  "SHActionSheetBlocks",           '~> 2.2.0'
   s.dependency  "SHGestureRecognizerBlocks",     '~> 1.0.0'
   s.dependency  "SHTextFieldBlocks",             '~> 1.0.0'
+  s.dependency  "SHTextViewBlocks",              '~> 1.0.0'
+  
   
   s.platform  = :ios, "6.0"
   s.source_files = source_files
