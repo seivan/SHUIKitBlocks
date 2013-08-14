@@ -86,4 +86,10 @@
   
 }
 
+-(void)testSHTextViewBlocks; {
+  STAssertTrue([UITextView.new
+                respondsToSelector:@selector(SH_blockDidChangeSelection)], nil);
+  
+}
+
 @end
