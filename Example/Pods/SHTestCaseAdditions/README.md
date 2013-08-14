@@ -4,7 +4,6 @@ SHTestCaseAdditions
 [![Version](http://cocoapod-badges.herokuapp.com/v/SHTestCaseAdditions/badge.png)](http://cocoadocs.org/docsets/SHTestCaseAdditions)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/SHTestCaseAdditions/badge.png)](http://cocoadocs.org/docsets/SHTestCaseAdditions)
 
-
 Overview
 --------
 Prefixed Asynchronous test helpers as a category on SenTestCase and XCTestCase
@@ -16,12 +15,10 @@ Prefixed Asynchronous test helpers as a category on SenTestCase and XCTestCase
 * Comes with tests and example. 
 
 
-
 Navigation
 ----------
 #### [Usage](https://github.com/seivan/SHTestCaseAdditions#usage-1)
 #### [API](https://github.com/seivan/SHTestCaseAdditions#api-1)
-
 
 
 Installation

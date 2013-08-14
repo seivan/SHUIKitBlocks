@@ -4,15 +4,16 @@ PODS:
   - SHAlertViewBlocks (1.1.0)
   - SHBarButtonItemBlocks (1.1.0)
   - SHControlBlocks (1.0.1)
-  - SHFastEnumerationProtocols (1.2.0)
+  - SHFastEnumerationProtocols (1.3.0)
   - SHGestureRecognizerBlocks (1.0.0)
   - SHNavigationControllerBlocks (1.0.0)
   - SHObjectUserInfo (1.1.0)
   - SHPopoverControllerBlocks (1.1.0)
   - SHSegueBlocks (1.2.0):
     - SHObjectUserInfo (~> 1.1.0)
-  - SHTestCaseAdditions (1.0.0)
-  - SHUIKitBlocks (1.1.0):
+  - SHTestCaseAdditions (1.1.0)
+  - SHTextFieldBlocks (1.0.0)
+  - SHUIKitBlocks (1.2.0):
     - SHActionSheetBlocks (~> 2.2.0)
     - SHAlertViewBlocks (~> 1.1.0)
     - SHBarButtonItemBlocks (~> 1.1.0)
@@ -21,6 +22,7 @@ PODS:
     - SHNavigationControllerBlocks (~> 1.0.0)
     - SHPopoverControllerBlocks (~> 1.1.0)
     - SHSegueBlocks (~> 1.2.0)
+    - SHTextFieldBlocks (~> 1.0.0)
     - SHWebViewBlocks (~> 1.1.0)
   - SHWebViewBlocks (1.1.0)
 
@@ -40,14 +42,15 @@ SPEC CHECKSUMS:
   SHAlertViewBlocks: ba88a9c577c521ed79443771f7422ed555778a16
   SHBarButtonItemBlocks: 9a46094653b708ee34d0667f78e0f3d46a550ab5
   SHControlBlocks: 3cd5cb4e8a127e416da89569ea0d5156a9e09c19
-  SHFastEnumerationProtocols: 5dde0d343a6bf08bf43ec5db2e6dcd9505c50d06
+  SHFastEnumerationProtocols: b83587ae41c1990851bcd675da01636a1b2addc8
   SHGestureRecognizerBlocks: ad6fd040d0c6899f0ef14ae0125e1eb05220d1af
   SHNavigationControllerBlocks: 97d2f424fe21ca47ab1c212bf904db36c72fd582
   SHObjectUserInfo: 3dfe4af11a45c985088f613813705b8ebd3cc718
   SHPopoverControllerBlocks: b6465af4af808240d56fc8144ce6565f2d256f45
   SHSegueBlocks: 9acc4d9d5f588933693b594cb07dfce4e2c42d2a
-  SHTestCaseAdditions: c19f82ab9f4963261ae1540eb1845146f24b2ff2
-  SHUIKitBlocks: 4c35e8703f14626f5d14db6e9a8ce5c10ac7932f
+  SHTestCaseAdditions: 0c64108c62ba04b01cb7d237a4cf6acf1176af45
+  SHTextFieldBlocks: c9ab776b2f10663cba1e7f1dcf116d6fe2f5e7df
+  SHUIKitBlocks: 31ed69b5ec9c2f7a60188ec0ceaaae99582d554b
   SHWebViewBlocks: 41ed6cfdc3f31124a4a92c52b2603d9bd4e40310
 
-COCOAPODS: 0.22.3
+COCOAPODS: 0.22.0
