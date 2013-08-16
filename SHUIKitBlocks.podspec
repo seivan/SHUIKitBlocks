@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   name           = "SHUIKitBlocks"
   url            = "https://github.com/seivan/#{name}"
   git_url        = "#{url}.git"
-  version        = "1.3.0"
+  version        = "1.4.0"
   source_files   = "#{name}/**/*.{h,m}"
 
   s.name         = name
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
                     * SHGestureRecognizerBlocks     => UIGestureRecognizer
                     * SHTextFieldBlocks             => UITextField
                     * SHTextViewBlocks              => UITextView 
+                    * SHTabBarControllerBlocks      => UITabBarController
 
                     Summary:
                     * Swizzle and junk free
@@ -56,7 +57,8 @@ Pod::Spec.new do |s|
   s.dependency  "SHGestureRecognizerBlocks",     '~> 1.0.0'
   s.dependency  "SHTextFieldBlocks",             '~> 1.0.0'
   s.dependency  "SHTextViewBlocks",              '~> 1.0.0'
-  
+  s.dependency  "SHTabBarControllerBlocks",      '~> 1.0.0'
+
   
   s.platform  = :ios, "6.0"
   s.source_files = source_files

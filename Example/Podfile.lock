@@ -11,10 +11,11 @@ PODS:
   - SHPopoverControllerBlocks (1.1.0)
   - SHSegueBlocks (1.2.0):
     - SHObjectUserInfo (~> 1.1.0)
+  - SHTabBarControllerBlocks (1.0.0)
   - SHTestCaseAdditions (1.1.0)
   - SHTextFieldBlocks (1.0.0)
   - SHTextViewBlocks (1.0.0)
-  - SHUIKitBlocks (1.3.0):
+  - SHUIKitBlocks (1.4.0):
     - SHActionSheetBlocks (~> 2.2.0)
     - SHAlertViewBlocks (~> 1.1.0)
     - SHBarButtonItemBlocks (~> 1.1.0)
@@ -23,6 +24,7 @@ PODS:
     - SHNavigationControllerBlocks (~> 1.0.0)
     - SHPopoverControllerBlocks (~> 1.1.0)
     - SHSegueBlocks (~> 1.2.0)
+    - SHTabBarControllerBlocks (~> 1.0.0)
     - SHTextFieldBlocks (~> 1.0.0)
     - SHTextViewBlocks (~> 1.0.0)
     - SHWebViewBlocks (~> 1.1.0)
@@ -50,10 +52,11 @@ SPEC CHECKSUMS:
   SHObjectUserInfo: 3dfe4af11a45c985088f613813705b8ebd3cc718
   SHPopoverControllerBlocks: b6465af4af808240d56fc8144ce6565f2d256f45
   SHSegueBlocks: 9acc4d9d5f588933693b594cb07dfce4e2c42d2a
+  SHTabBarControllerBlocks: a174303367b8135d35e8000994e9f756297f100d
   SHTestCaseAdditions: 0c64108c62ba04b01cb7d237a4cf6acf1176af45
   SHTextFieldBlocks: c9ab776b2f10663cba1e7f1dcf116d6fe2f5e7df
   SHTextViewBlocks: d234aa9b40df8d12e51715232388fc20abe780de
-  SHUIKitBlocks: 41b7d922493d049aeac917634fea3f44fd6d2f5f
+  SHUIKitBlocks: d64c3fe0ddf9b819e4e3e69c4daecbee4ecdf669
   SHWebViewBlocks: 41ed6cfdc3f31124a4a92c52b2603d9bd4e40310
 
 COCOAPODS: 0.22.0
