@@ -10,3 +10,4 @@
 #import "UIGestureRecognizer+SHGestureRecognizerBlocks.h"
 #import "UITextField+SHTextFieldBlocks.h"
 #import "UITextView+SHTextViewBlocks.h"
+#import "UITabBarController+SHTabBarControllerBlocks.h"

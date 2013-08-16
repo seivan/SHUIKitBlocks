@@ -73,6 +73,12 @@
 #define COCOAPODS_VERSION_MINOR_SHSegueBlocks 2
 #define COCOAPODS_VERSION_PATCH_SHSegueBlocks 0
 
+// SHTabBarControllerBlocks
+#define COCOAPODS_POD_AVAILABLE_SHTabBarControllerBlocks
+#define COCOAPODS_VERSION_MAJOR_SHTabBarControllerBlocks 1
+#define COCOAPODS_VERSION_MINOR_SHTabBarControllerBlocks 0
+#define COCOAPODS_VERSION_PATCH_SHTabBarControllerBlocks 0
+
 // SHTestCaseAdditions
 #define COCOAPODS_POD_AVAILABLE_SHTestCaseAdditions
 #define COCOAPODS_VERSION_MAJOR_SHTestCaseAdditions 1
@@ -94,7 +100,7 @@
 // SHUIKitBlocks
 #define COCOAPODS_POD_AVAILABLE_SHUIKitBlocks
 #define COCOAPODS_VERSION_MAJOR_SHUIKitBlocks 1
-#define COCOAPODS_VERSION_MINOR_SHUIKitBlocks 3
+#define COCOAPODS_VERSION_MINOR_SHUIKitBlocks 4
 #define COCOAPODS_VERSION_PATCH_SHUIKitBlocks 0
 
 // SHWebViewBlocks

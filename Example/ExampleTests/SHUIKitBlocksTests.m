@@ -92,4 +92,10 @@
   
 }
 
+-(void)testSHTabBarControllerBlocks; {
+  STAssertTrue([UITabBarController.new
+                respondsToSelector:@selector(SH_setShouldSelectViewControllerBlock:)], nil);
+  
+}
+
 @end
