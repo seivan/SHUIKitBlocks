@@ -1,22 +1,5 @@
-#include "Pods-ExampleTests-KIF-next.xcconfig"
-#include "Pods-ExampleTests-SHActionSheetBlocks.xcconfig"
-#include "Pods-ExampleTests-SHAlertViewBlocks.xcconfig"
-#include "Pods-ExampleTests-SHBarButtonItemBlocks.xcconfig"
-#include "Pods-ExampleTests-SHControlBlocks.xcconfig"
-#include "Pods-ExampleTests-SHFastEnumerationProtocols.xcconfig"
-#include "Pods-ExampleTests-SHGestureRecognizerBlocks.xcconfig"
-#include "Pods-ExampleTests-SHNavigationControllerBlocks.xcconfig"
-#include "Pods-ExampleTests-SHObjectUserInfo.xcconfig"
-#include "Pods-ExampleTests-SHPopoverControllerBlocks.xcconfig"
-#include "Pods-ExampleTests-SHSegueBlocks.xcconfig"
-#include "Pods-ExampleTests-SHTabBarControllerBlocks.xcconfig"
-#include "Pods-ExampleTests-SHTestCaseAdditions.xcconfig"
-#include "Pods-ExampleTests-SHTextFieldBlocks.xcconfig"
-#include "Pods-ExampleTests-SHTextViewBlocks.xcconfig"
-#include "Pods-ExampleTests-SHUIKitBlocks.xcconfig"
-#include "Pods-ExampleTests-SHWebViewBlocks.xcconfig"
-FRAMEWORK_SEARCH_PATHS =  ${PODS_EXAMPLETESTS_KIF_NEXT_FRAMEWORK_SEARCH_PATHS} ${PODS_EXAMPLETESTS_SHTESTCASEADDITIONS_FRAMEWORK_SEARCH_PATHS}
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(SDKROOT)/Developer/Library/Frameworks" "$(DEVELOPER_LIBRARY_DIR)/Frameworks"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/KIF-next" "${PODS_ROOT}/Headers/SHActionSheetBlocks" "${PODS_ROOT}/Headers/SHAlertViewBlocks" "${PODS_ROOT}/Headers/SHBarButtonItemBlocks" "${PODS_ROOT}/Headers/SHControlBlocks" "${PODS_ROOT}/Headers/SHFastEnumerationProtocols" "${PODS_ROOT}/Headers/SHGestureRecognizerBlocks" "${PODS_ROOT}/Headers/SHNavigationControllerBlocks" "${PODS_ROOT}/Headers/SHObjectUserInfo" "${PODS_ROOT}/Headers/SHPopoverControllerBlocks" "${PODS_ROOT}/Headers/SHSegueBlocks" "${PODS_ROOT}/Headers/SHTabBarControllerBlocks" "${PODS_ROOT}/Headers/SHTestCaseAdditions" "${PODS_ROOT}/Headers/SHTextFieldBlocks" "${PODS_ROOT}/Headers/SHTextViewBlocks" "${PODS_ROOT}/Headers/SHUIKitBlocks" "${PODS_ROOT}/Headers/SHWebViewBlocks"
-OTHER_LDFLAGS = -ObjC ${PODS_EXAMPLETESTS_KIF_NEXT_OTHER_LDFLAGS} ${PODS_EXAMPLETESTS_SHTESTCASEADDITIONS_OTHER_LDFLAGS}
+OTHER_LDFLAGS = -ObjC -framework CoreGraphics -framework SenTestingKit
 PODS_ROOT = ${SRCROOT}/Pods

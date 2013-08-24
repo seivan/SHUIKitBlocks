@@ -1,6 +1,6 @@
 
-#pragma mark -
-#pragma mark Block Def
+
+#pragma mark - Block Def
 typedef void (^SHWebViewBlock)(UIWebView * theWebView);
 
 typedef void (^SHWebViewBlockWithError)(UIWebView * theWebView, NSError * theError);
@@ -9,15 +9,15 @@ typedef BOOL (^SHWebViewBlockWithRequest)(UIWebView * theWebView, NSURLRequest *
 
 @interface UIWebView (SHWebViewBlocks)
 
-#pragma mark -
-#pragma mark Helpers
+
+#pragma mark - Helpers
 -(void)SH_loadRequestWithString:(NSString *)theString;
 
-#pragma mark -
-#pragma mark Properties
 
-#pragma mark -
-#pragma mark Setters
+#pragma mark - Properties
+
+
+#pragma mark - Setters
 
 
 -(void)SH_setShouldStartLoadWithRequestBlock:(SHWebViewBlockWithRequest)theBlock;
@@ -31,8 +31,8 @@ typedef BOOL (^SHWebViewBlockWithRequest)(UIWebView * theWebView, NSURLRequest *
 
 
 
-#pragma mark -
-#pragma mark Getters
+
+#pragma mark - Getters
 
 @property(nonatomic,readonly) SHWebViewBlockWithRequest SH_blockShouldStartLoadingWithRequest;
 

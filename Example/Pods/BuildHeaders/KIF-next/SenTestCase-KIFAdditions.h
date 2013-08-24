@@ -1,0 +1,1 @@
+../../KIF-next/Additions/SenTestCase-KIFAdditions.h
