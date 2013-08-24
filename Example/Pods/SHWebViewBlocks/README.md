@@ -4,6 +4,8 @@ SHWebViewBlocks
 [![Version](http://cocoapod-badges.herokuapp.com/v/SHWebViewBlocks/badge.png)](http://cocoadocs.org/docsets/SHWebViewBlocks)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/SHWebViewBlocks/badge.png)](http://cocoadocs.org/docsets/SHWebViewBlocks)
 
+> This pod is used by [`SHUIKitBlocks`](https://github.com/seivan/SHUIKitBlocks) as part of many components covering to plug the holes missing from Foundation, UIKit, CoreLocation, GameKit, MapKit and other aspects of an iOS application's architecture.
+
 Overview
 --------
 Request blocks for UIWebView. 

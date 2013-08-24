@@ -18,8 +18,9 @@
  @discussion Useful when a test requires an asynchronous task to complete, especially when that task does not trigger a visible change in the view hierarchy.
  @param name The name of the NSNotification.
  @param object The object to which the step should listen. Nil value will listen to all objects.
+ @return The detected NSNotification.
  */
-- (void)waitForNotificationName:(NSString*)name object:(id)object;
+- (NSNotification *)waitForNotificationName:(NSString*)name object:(id)object;
 
 /*!
  @abstract Waits for a specific NSNotification, emitted during or after execution of a block.
@@ -28,12 +29,28 @@
  @param name The name of the NSNotification.
  @param object The object to which the step should listen. Nil value will listen to all objects.
  @param block The block of code to be executed.
+ @return The detected NSNotification.
  */
-- (void)waitForNotificationName:(NSString *)name object:(id)object whileExecutingBlock:(void(^)())block;
+- (NSNotification *)waitForNotificationName:(NSString *)name object:(id)object whileExecutingBlock:(void(^)())block;
 
 /*!
  @abstract Simulates a memory warning.
  */
 - (void)simulateMemoryWarning;
+
+/*!
+ @abstract Waits for the application to request a specific URL while executing a block.
+ @param URLString The absolute string representation of the URL to detect.
+ @param block The block of code to be executed.
+ @param returnValue The value to return from @c +[UIApplication openURL:].
+ */
+- (void)waitForApplicationToOpenURL:(NSString *)URLString whileExecutingBlock:(void(^)())block returning:(BOOL)returnValue;
+
+/*!
+ @abstract Waits for the application to request any URL while executing a block.
+ @param block The block of code to be executed.
+ @param returnValue The value to return from @c +[UIApplication openURL:].
+ */
+- (void)waitForApplicationToOpenAnyURLWhileExecutingBlock:(void(^)())block returning:(BOOL)returnValue;
 
 @end

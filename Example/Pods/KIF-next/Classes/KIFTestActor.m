@@ -12,6 +12,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import <dlfcn.h>
 #import <objc/runtime.h>
+#import "UIApplication-KIFAdditions.h"
 
 @implementation KIFTestActor
 
@@ -21,10 +22,12 @@
         NSLog(@"KIFTester loaded");
         [KIFTestActor _enableAccessibility];
         
-        if ([[NSProcessInfo processInfo] environment][@"StartKIFManually"]) {
+        if ([[[NSProcessInfo processInfo] environment] objectForKey:@"StartKIFManually"]) {
             [[NSUserDefaults standardUserDefaults] setBool:YES forKey:SenTestToolKey];
             SenSelfTestMain();
         }
+        
+        [UIApplication swizzleRunLoop];
     }
 }
 
@@ -82,7 +85,7 @@
     NSError *error = nil;
     
     while ((result = executionBlock(&error)) == KIFTestStepResultWait && -[startDate timeIntervalSinceNow] < timeout) {
-        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
+        CFRunLoopRunInMode([[UIApplication sharedApplication] currentRunLoopMode] ?: kCFRunLoopDefaultMode, 0.1, false);
     }
     
     if (result == KIFTestStepResultWait) {
@@ -164,7 +167,15 @@ static NSTimeInterval KIFTestStepDefaultTimeout = 10.0;
 
 - (void)failWithException:(NSException *)exception stopTest:(BOOL)stop
 {
-    [self.delegate failWithException:exception stopTest:YES];
+    [self failWithExceptions:@[exception] stopTest:YES];
+}
+
+- (void)failWithExceptions:(NSArray *)exceptions stopTest:(BOOL)stop
+{
+    NSException *firstException = [exceptions objectAtIndex:0];
+    NSException *newException = [NSException failureInFile:self.file atLine:self.line withDescription:@"Failure in child step: %@", firstException.description];
+    
+    [self.delegate failWithExceptions:[exceptions arrayByAddingObject:newException] stopTest:stop];
 }
 
 @end
