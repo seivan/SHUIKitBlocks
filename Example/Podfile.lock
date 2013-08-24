@@ -15,7 +15,7 @@ PODS:
   - SHTestCaseAdditions (1.1.0)
   - SHTextFieldBlocks (1.0.0)
   - SHTextViewBlocks (1.0.0)
-  - SHUIKitBlocks (1.4.0):
+  - SHUIKitBlocks (1.5.0):
     - SHActionSheetBlocks (~> 2.2.0)
     - SHAlertViewBlocks (~> 1.1.0)
     - SHBarButtonItemBlocks (~> 1.1.0)
@@ -56,7 +56,7 @@ SPEC CHECKSUMS:
   SHTestCaseAdditions: 0c64108c62ba04b01cb7d237a4cf6acf1176af45
   SHTextFieldBlocks: c9ab776b2f10663cba1e7f1dcf116d6fe2f5e7df
   SHTextViewBlocks: d234aa9b40df8d12e51715232388fc20abe780de
-  SHUIKitBlocks: 27182f498123178d03ea96e6f79141e6b2fc94b6
+  SHUIKitBlocks: cbc6302ed406e6303d9be4dbb48cd17b185ee596
   SHWebViewBlocks: 967c535215c44000d321b10d3eb00d0cb5cd17cc
 
 COCOAPODS: 0.23.0
