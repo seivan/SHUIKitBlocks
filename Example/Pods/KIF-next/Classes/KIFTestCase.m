@@ -79,11 +79,17 @@
 
 - (void)failWithException:(NSException *)exception stopTest:(BOOL)stop
 {
-    if (!stop) {
-        [self continueAfterFailure];
+    if (stop && self.stopTestsOnFirstBigFailure) {
+        NSLog(@"Fatal failure encountered: %@", exception.description);
+        NSLog(@"Stopping tests since stopTestsOnFirstBigFailure = YES");
+        
+        KIFTestActor *waiter = [[[KIFTestActor alloc] init] autorelease];
+        [waiter waitForTimeInterval:[[NSDate distantFuture] timeIntervalSinceNow]];
+        
+        return;
+    } else {
+        [super failWithException:exception stopTest:stop];
     }
-    [self failWithException:exception];
-    [self raiseAfterFailure];
 }
 
 @end

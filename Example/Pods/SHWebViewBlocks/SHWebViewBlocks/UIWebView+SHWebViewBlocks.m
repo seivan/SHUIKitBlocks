@@ -1,15 +1,14 @@
 
 #import "UIWebView+SHWebViewBlocks.h"
 
-static NSString * const SH_blockShouldStartLoadingWithRequest = @"SH_blockShouldStartLoadingWithRequest";
-static NSString * const SH_blockDidStartLoad = @"SH_blockDidStartLoad";
-static NSString * const SH_blockDidFinishLoad = @"SH_blockDidFinishLoad";
-static NSString * const SH_blockDidFailLoadWithError = @"SH_blockDidFailLoadWithError";
+#define SHStaticConstString(X) static NSString * const X = @#X
 
-@protocol SHWebViewDelegate <NSObject>
-@required
-+(void)setDelegateForWebView:(UIWebView *)theWebView;
-@end
+SHStaticConstString(SH_blockShouldBeginEditing);
+SHStaticConstString(SH_blockShouldStartLoadingWithRequest);
+SHStaticConstString(SH_blockDidStartLoad);
+SHStaticConstString(SH_blockDidFinishLoad);
+SHStaticConstString(SH_blockDidFailLoadWithError);
+
 
 
 @interface SHWebViewBlockManager : NSObject
@@ -19,27 +18,23 @@ static NSString * const SH_blockDidFailLoadWithError = @"SH_blockDidFailLoadWith
 +(instancetype)sharedManager;
 -(void)SH_memoryDebugger;
 
-#pragma mark -
-#pragma mark Class selectors
 
-#pragma mark -
-#pragma mark Setter
-+(void)setDelegateForWebView:(UIWebView *)theWebView;
+#pragma mark - Class selectors
 
 +(void)setBlock:(id)theBlock
   forWebView:(UIWebView *)theWebView
         withKey:(NSString *)theKey;
 
-#pragma mark -
-#pragma mark Getter
+
+#pragma mark - Getter
 +(id)blockForWebView:(UIWebView *)theWebView withKey:(NSString *)theKey;
 
 @end
 
 @implementation SHWebViewBlockManager
 
-#pragma mark -
-#pragma mark Init & Dealloc
+
+#pragma mark - Init & Dealloc
 -(instancetype)init; {
   self = [super init];
   if (self) {
@@ -63,8 +58,8 @@ static NSString * const SH_blockDidFailLoadWithError = @"SH_blockDidFailLoadWith
 }
 
 
-#pragma mark -
-#pragma mark Debugger
+
+#pragma mark - Debugger
 -(void)SH_memoryDebugger; {
   double delayInSeconds = 2.0;
   dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
@@ -74,23 +69,17 @@ static NSString * const SH_blockDidFailLoadWithError = @"SH_blockDidFailLoadWith
   });
 }
 
-#pragma mark -
-#pragma mark Class selectors
 
-#pragma mark -
-#pragma mark Setter
-+(void)setDelegateForWebView:(UIWebView *)theWebView ;{
-  [theWebView setDelegate:[SHWebViewBlockManager sharedManager]];
-}
+#pragma mark - Class selectors
 
 +(void)setBlock:(id)theBlock forWebView:(UIWebView *)theWebView withKey:(NSString *)theKey; {
-
-  NSAssert(theWebView, @"Must pass theWebView");
+  NSParameterAssert(theWebView);
+  
+  SHWebViewBlockManager * manager = [SHWebViewBlockManager sharedManager];
+  theWebView.delegate = manager;
   
   id block = [theBlock copy];
   
-  SHWebViewBlockManager * manager = [SHWebViewBlockManager
-                                                  sharedManager];
   NSMutableDictionary * map = [manager.mapBlocks objectForKey:theWebView];
   if(map == nil) {
     map = [@{} mutableCopy];
@@ -105,20 +94,20 @@ static NSString * const SH_blockDidFailLoadWithError = @"SH_blockDidFailLoadWith
       
 }
 
-#pragma mark -
-#pragma mark Getter
+
+#pragma mark - Getter
 +(id)blockForWebView:(UIWebView *)theWebView withKey:(NSString *)theKey; {
-  NSAssert(theWebView, @"Must pass theWebView to fetch blocks for");
-  return [[[SHWebViewBlockManager sharedManager].mapBlocks
+  NSParameterAssert(theWebView);
+  SHWebViewBlockManager * manager = [SHWebViewBlockManager sharedManager];
+  theWebView.delegate = manager;
+  return [[manager.mapBlocks
           objectForKey:theWebView] objectForKey:theKey];
 }
 
-#pragma mark -
-#pragma mark Delegates
 
+#pragma mark - Delegates
 
-#pragma mark -
-#pragma mark <UIWebViewDelegate>
+#pragma mark - <UIWebViewDelegate>
 -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType; {
   BOOL shouldStartLoadWithRequest = YES;
   SHWebViewBlockWithRequest block = [webView SH_blockShouldStartLoadingWithRequest];
@@ -148,59 +137,47 @@ static NSString * const SH_blockDidFailLoadWithError = @"SH_blockDidFailLoadWith
 
 @end
 
-@interface UIWebView (Private)
--(void)SH_setNavigationBlocks;
-@end
 
 @implementation UIWebView  (SHWebViewBlocks)
 
-#pragma mark -
-#pragma mark Private
--(void)SH_setNavigationBlocks; {
-  [SHWebViewBlockManager setDelegateForWebView:self];
-}
 
-#pragma mark -
-#pragma mark Helpers
+
+#pragma mark - Helpers
 -(void)SH_loadRequestWithString:(NSString *)theString; {
-  NSAssert(theString, @"Must pass theString");
+   NSParameterAssert(theString);
   [self loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:theString]]];
 }
 
 
-#pragma mark -
-#pragma mark Properties
 
-#pragma mark -
-#pragma mark Setters
+#pragma mark - Properties
+
+
+#pragma mark - Setters
 
 -(void)SH_setShouldStartLoadWithRequestBlock:(SHWebViewBlockWithRequest)theBlock; {
-  [self SH_setNavigationBlocks];
   [SHWebViewBlockManager setBlock:theBlock forWebView:self withKey:SH_blockShouldStartLoadingWithRequest];
 }
 
 -(void)SH_setDidStartLoadBlock:(SHWebViewBlock)theBlock; {
-  [self SH_setNavigationBlocks];
   [SHWebViewBlockManager setBlock:theBlock forWebView:self withKey:SH_blockDidStartLoad];
   
 }
 
 -(void)SH_setDidFinishLoadBlock:(SHWebViewBlock)theBlock; {
-  [self SH_setNavigationBlocks];
   [SHWebViewBlockManager setBlock:theBlock forWebView:self withKey:SH_blockDidFinishLoad];
   
 }
 
 -(void)SH_setDidFailLoadWithErrorBlock:(SHWebViewBlockWithError)theBlock; {
-  [self SH_setNavigationBlocks];
   [SHWebViewBlockManager setBlock:theBlock forWebView:self withKey:SH_blockDidFailLoadWithError];
   
 }
 
 
 
-#pragma mark -
-#pragma mark Getters
+
+#pragma mark - Getters
 
 -(SHWebViewBlockWithRequest)SH_blockShouldStartLoadingWithRequest; {
   return [SHWebViewBlockManager blockForWebView:self withKey:SH_blockShouldStartLoadingWithRequest];

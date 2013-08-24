@@ -11,7 +11,7 @@
 // This library does not follow semantic-versioning,
 // so we were not able to define version macros.
 // Please contact the author.
-// Version: 2.0.0pre4.
+// Version: 2.0.0pre5.
 
 // SHActionSheetBlocks
 #define COCOAPODS_POD_AVAILABLE_SHActionSheetBlocks
@@ -106,6 +106,6 @@
 // SHWebViewBlocks
 #define COCOAPODS_POD_AVAILABLE_SHWebViewBlocks
 #define COCOAPODS_VERSION_MAJOR_SHWebViewBlocks 1
-#define COCOAPODS_VERSION_MINOR_SHWebViewBlocks 1
+#define COCOAPODS_VERSION_MINOR_SHWebViewBlocks 2
 #define COCOAPODS_VERSION_PATCH_SHWebViewBlocks 0
 

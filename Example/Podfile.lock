@@ -1,5 +1,5 @@
 PODS:
-  - KIF-next (2.0.0pre4)
+  - KIF-next (2.0.0pre5)
   - SHActionSheetBlocks (2.2.0)
   - SHAlertViewBlocks (1.1.0)
   - SHBarButtonItemBlocks (1.1.0)
@@ -27,8 +27,8 @@ PODS:
     - SHTabBarControllerBlocks (~> 1.0.0)
     - SHTextFieldBlocks (~> 1.0.0)
     - SHTextViewBlocks (~> 1.0.0)
-    - SHWebViewBlocks (~> 1.1.0)
-  - SHWebViewBlocks (1.1.0)
+    - SHWebViewBlocks (~> 1.2.0)
+  - SHWebViewBlocks (1.2.0)
 
 DEPENDENCIES:
   - KIF-next
@@ -41,7 +41,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  KIF-next: 1c59f919ceee5999373c875832101c2fb48b5f59
+  KIF-next: 1048df1e7fd86cd3579c649cfbdfa9dbf94eaaa9
   SHActionSheetBlocks: 2656692a5da00e3f4a310e8fcfff4731f5afd594
   SHAlertViewBlocks: ba88a9c577c521ed79443771f7422ed555778a16
   SHBarButtonItemBlocks: 9a46094653b708ee34d0667f78e0f3d46a550ab5
@@ -56,7 +56,7 @@ SPEC CHECKSUMS:
   SHTestCaseAdditions: 0c64108c62ba04b01cb7d237a4cf6acf1176af45
   SHTextFieldBlocks: c9ab776b2f10663cba1e7f1dcf116d6fe2f5e7df
   SHTextViewBlocks: d234aa9b40df8d12e51715232388fc20abe780de
-  SHUIKitBlocks: d64c3fe0ddf9b819e4e3e69c4daecbee4ecdf669
-  SHWebViewBlocks: 41ed6cfdc3f31124a4a92c52b2603d9bd4e40310
+  SHUIKitBlocks: 27182f498123178d03ea96e6f79141e6b2fc94b6
+  SHWebViewBlocks: 967c535215c44000d321b10d3eb00d0cb5cd17cc
 
-COCOAPODS: 0.22.0
+COCOAPODS: 0.23.0
