@@ -1,0 +1,66 @@
+PODS:
+  - KIF/Core (2.0.0)
+  - KIF/XCTest (2.0.0):
+    - KIF/Core
+  - SHActionSheetBlocks (2.3.0)
+  - SHAlertViewBlocks (1.2.0)
+  - SHBarButtonItemBlocks (1.2.0)
+  - SHControlBlocks (1.2.0)
+  - SHGestureRecognizerBlocks (1.1.0)
+  - SHNavigationControllerBlocks (1.1.0)
+  - SHObjectUserInfo (1.1.0)
+  - SHPopoverControllerBlocks (1.2.0)
+  - SHSegueBlocks (1.2.1):
+    - SHObjectUserInfo (~> 1.1.0)
+  - SHTabBarControllerBlocks (1.1.0)
+  - SHTestCaseAdditions (1.4.1):
+    - SHTestCaseAdditions/XCTest
+  - SHTestCaseAdditions/XCTest (1.4.1)
+  - SHTextFieldBlocks (1.1.0)
+  - SHTextViewBlocks (1.1.0)
+  - SHUIKitBlocks (1.5.0):
+    - SHActionSheetBlocks (~> 2.3.0)
+    - SHAlertViewBlocks (~> 1.2.0)
+    - SHBarButtonItemBlocks (~> 1.2.0)
+    - SHControlBlocks (~> 1.2.0)
+    - SHGestureRecognizerBlocks (~> 1.1.0)
+    - SHNavigationControllerBlocks (~> 1.1.0)
+    - SHPopoverControllerBlocks (~> 1.2.0)
+    - SHSegueBlocks (~> 1.2.1)
+    - SHTabBarControllerBlocks (~> 1.1.0)
+    - SHTextFieldBlocks (~> 1.1.0)
+    - SHTextViewBlocks (~> 1.1.0)
+    - SHWebViewBlocks (~> 1.3.0)
+  - SHWebViewBlocks (1.3.0)
+
+DEPENDENCIES:
+  - KIF/XCTest (from `https://github.com/tonyd256/KIF`, branch `xctest`)
+  - SHTestCaseAdditions
+  - SHUIKitBlocks (from `../`)
+
+EXTERNAL SOURCES:
+  KIF:
+    :branch: xctest
+    :git: https://github.com/tonyd256/KIF
+  SHUIKitBlocks:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KIF: 5de8e5eedd49c83778fe326c918f9330123a7412
+  SHActionSheetBlocks: d1194997eb32ea752a906043ac97887615a270ad
+  SHAlertViewBlocks: 3ea75e2d9a1221e59deed52818759a8c25f5f77f
+  SHBarButtonItemBlocks: 066ae66720be9ce1531d9d5e95350031b8aae0fe
+  SHControlBlocks: 082840a905d9b4d8e13f872f0f90564ff16c7b24
+  SHGestureRecognizerBlocks: 4bbc489b58ccaabf90c8acb6e3355f42c568d268
+  SHNavigationControllerBlocks: 0dcf057309f8c0f89a361e8e0298b668343503f7
+  SHObjectUserInfo: 3dfe4af11a45c985088f613813705b8ebd3cc718
+  SHPopoverControllerBlocks: e67aba94b8d420517f331fab1523403260070e3c
+  SHSegueBlocks: 5049a0d292f7288a482f5443f22b845e4d81e1e1
+  SHTabBarControllerBlocks: fad90155b89d48c2961c8ee5fbc75975d75172a2
+  SHTestCaseAdditions: ff32e10731f37effd08c254e538c3e7998f74921
+  SHTextFieldBlocks: be9b486dba92e57ee2ab99cdc6a9542d71380c2d
+  SHTextViewBlocks: 9ad22b4d4e22985b79dbf23aa6af67e6fc4e7b55
+  SHUIKitBlocks: f881174922b3ee4c5953b6e091855dc2369bdabe
+  SHWebViewBlocks: 4776bd43c0dd653e8f9574f93973436ccba224d2
+
+COCOAPODS: 0.28.0
