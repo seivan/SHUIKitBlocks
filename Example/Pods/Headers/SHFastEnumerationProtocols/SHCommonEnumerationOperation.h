@@ -1,1 +1,0 @@
-../../SHFastEnumerationProtocols/SHFastEnumerationProtocols/SHCommonEnumerationOperation.h

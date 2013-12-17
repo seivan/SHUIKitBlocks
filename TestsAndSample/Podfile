@@ -1,0 +1,12 @@
+platform :ios, '7.0' 
+
+link_with [:Sample, :Tests]
+pod 'SHUIKitBlocks', :path => '../'
+
+target :Tests, :exclusive => true do
+  pod 'SHTestCaseAdditions'
+  pod "KIF/XCTest", :git => "https://github.com/tonyd256/KIF", :branch => "xctest"
+end
+
+
+

@@ -1,0 +1,9 @@
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#endif
+
+#import "Pods-Tests-environment.h"
+#import <CoreGraphics/CoreGraphics.h>
+
+#import <XCTest/XCTest.h>
+
