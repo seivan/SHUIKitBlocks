@@ -59,7 +59,7 @@ Pod::Spec.new do |s|
   s.dependency  "SHTextViewBlocks",              '~> 1.1.0'
   s.dependency  "SHWebViewBlocks",               '~> 1.3.0'
   
-  s.platform  = :ios, "6.0"
+  s.platform  = :ios, "7.0"
   s.source_files = source_files
   s.requires_arc = true
 end

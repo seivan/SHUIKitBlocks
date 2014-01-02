@@ -60,7 +60,7 @@ SPEC CHECKSUMS:
   SHTestCaseAdditions: ff32e10731f37effd08c254e538c3e7998f74921
   SHTextFieldBlocks: be9b486dba92e57ee2ab99cdc6a9542d71380c2d
   SHTextViewBlocks: 9ad22b4d4e22985b79dbf23aa6af67e6fc4e7b55
-  SHUIKitBlocks: d95123c82bea67c1a1620ad35a31900a88400e7b
+  SHUIKitBlocks: 29ea3716be6a772ac7b9e6ad407ecfa73dc2ab10
   SHWebViewBlocks: 4776bd43c0dd653e8f9574f93973436ccba224d2
 
 COCOAPODS: 0.28.0
