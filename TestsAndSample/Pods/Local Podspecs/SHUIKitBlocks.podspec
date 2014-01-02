@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   name           = "SHUIKitBlocks"
   url            = "https://github.com/seivan/#{name}"
   git_url        = "#{url}.git"
-  version        = "1.5.0"
+  version        = "2.0.0"
   source_files   = "#{name}/**/*.{h,m}"
 
   s.name         = name
@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
   s.dependency  "SHBarButtonItemBlocks",         '~> 1.2.0'
   s.dependency  "SHControlBlocks",               '~> 1.2.0'
   s.dependency  "SHGestureRecognizerBlocks",     '~> 1.1.0'
-  s.dependency  "SHNavigationControllerBlocks",  '~> 1.1.0'
+  s.dependency  "SHNavigationControllerBlocks",  '~> 2.0.0'
   s.dependency  "SHPopoverControllerBlocks",     '~> 1.2.0'
   s.dependency  "SHSegueBlocks",                 '~> 1.2.1'
   s.dependency  "SHTabBarControllerBlocks",      '~> 1.1.0'

@@ -19,7 +19,8 @@
 
 ##Install
 ```ruby
-pod 'SHUIKitBlocks'
+pod 'SHUIKitBlocks' #for iOS 7
+pod 'SHUIKitBlocks', '~> 1.6.0' # for iOS 6
 ```
 
 ##Dependency Status
