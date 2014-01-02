@@ -20,7 +20,8 @@ Installation
 ------------
 
 ```ruby
-pod 'SHNavigationControllerBlocks'
+pod 'SHNavigationControllerBlocks' 
+pod 'SHNavigationControllerBlocks', '~> 1.0.0' # for iOS 6
 ```
 
 ***
@@ -45,29 +46,53 @@ API
 
 ```objective-c
 
-#pragma mark -
-#pragma mark Block Def
-
-typedef void (^SHNavigationControllerBlock)(UINavigationController * theNavigationController,
-                                            UIViewController       * theViewController,
+#pragma mark - Block Definitions
+typedef void (^SHNavigationControllerBlock)(UINavigationController * navigationController,
+                                            UIViewController       * viewController,
                                             BOOL                      isAnimated);
 
-                                            
-#pragma mark -
-#pragma mark Properties
+typedef UIInterfaceOrientation(^SHNavigationControllerOrientationBlock)(UINavigationController * navigationController);
 
-#pragma mark -
-#pragma mark Setters
+typedef id<UIViewControllerInteractiveTransitioning>
+(^SHNavigationControllerInteractiveTransitionBlock)(UINavigationController * navigationController,
+                                                    id<UIViewControllerAnimatedTransitioning> animationController);
+
+typedef id<UIViewControllerAnimatedTransitioning>
+(^SHNavigationControllerAnimatedTransitionBlock) (UINavigationController * navigationController,
+                                                  UINavigationControllerOperation operation,
+                                                  UIViewController * fromVC,
+                                                  UIViewController * toVC
+                                                  );
+
+
+@interface UINavigationController (SHNavigationControllerBlocks)
+
+
+
+#pragma mark - Properties
+
+#pragma mark - Setters
 
 -(void)SH_setWillShowViewControllerBlock:(SHNavigationControllerBlock)theBlock;
 
 -(void)SH_setDidShowViewControllerBlock:(SHNavigationControllerBlock)theBlock;
 
-#pragma mark -
-#pragma mark Getters
+-(void)SH_setPreferredInterfaceOrientationForPresentatationBlock:(SHNavigationControllerOrientationBlock)theBlock;
+
+-(void)SH_setInteractiveTransitioningBlock:(SHNavigationControllerInteractiveTransitionBlock)theBlock;
+
+-(void)SH_setAnimatedTransitioningBlock:(SHNavigationControllerAnimatedTransitionBlock)theBlock;
+
+#pragma mark - Getters
 
 @property(nonatomic,readonly) SHNavigationControllerBlock SH_blockWillShowViewController;
 @property(nonatomic,readonly) SHNavigationControllerBlock SH_blockDidShowViewController;
+@property(nonatomic,readonly) SHNavigationControllerOrientationBlock SH_blockInterfaceOrientationForPresentation;
+@property(nonatomic,readonly) SHNavigationControllerInteractiveTransitionBlock SH_blockInteractiveTransitioning;
+@property(nonatomic,readonly) SHNavigationControllerAnimatedTransitionBlock SH_blockAnimatedTransitioning;
+
+
+@end
 ```
 
 

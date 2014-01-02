@@ -38,8 +38,8 @@
 
 // SHNavigationControllerBlocks
 #define COCOAPODS_POD_AVAILABLE_SHNavigationControllerBlocks
-#define COCOAPODS_VERSION_MAJOR_SHNavigationControllerBlocks 1
-#define COCOAPODS_VERSION_MINOR_SHNavigationControllerBlocks 1
+#define COCOAPODS_VERSION_MAJOR_SHNavigationControllerBlocks 2
+#define COCOAPODS_VERSION_MINOR_SHNavigationControllerBlocks 0
 #define COCOAPODS_VERSION_PATCH_SHNavigationControllerBlocks 0
 
 // SHObjectUserInfo
@@ -80,8 +80,8 @@
 
 // SHUIKitBlocks
 #define COCOAPODS_POD_AVAILABLE_SHUIKitBlocks
-#define COCOAPODS_VERSION_MAJOR_SHUIKitBlocks 1
-#define COCOAPODS_VERSION_MINOR_SHUIKitBlocks 5
+#define COCOAPODS_VERSION_MAJOR_SHUIKitBlocks 2
+#define COCOAPODS_VERSION_MINOR_SHUIKitBlocks 0
 #define COCOAPODS_VERSION_PATCH_SHUIKitBlocks 0
 
 // SHWebViewBlocks
