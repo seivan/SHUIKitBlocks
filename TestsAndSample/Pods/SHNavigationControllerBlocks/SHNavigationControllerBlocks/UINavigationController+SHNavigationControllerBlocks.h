@@ -8,11 +8,11 @@ typedef void (^SHNavigationControllerBlock)(UINavigationController * navigationC
 typedef UIInterfaceOrientation(^SHNavigationControllerOrientationBlock)(UINavigationController * navigationController);
 
 typedef id<UIViewControllerInteractiveTransitioning>
-(^SHNavigationControllerInteractiveTransitionBlock)(UINavigationController * navigationController,
+(^SHNavigationControllerInteractiveControllerBlock)(UINavigationController * navigationController,
                                                     id<UIViewControllerAnimatedTransitioning> animationController);
 
 typedef id<UIViewControllerAnimatedTransitioning>
-(^SHNavigationControllerAnimatedTransitionBlock) (UINavigationController * navigationController,
+(^SHNavigationControllerAnimatedControllerBlock) (UINavigationController * navigationController,
                                                   UINavigationControllerOperation operation,
                                                   UIViewController * fromVC,
                                                   UIViewController * toVC
@@ -33,17 +33,17 @@ typedef id<UIViewControllerAnimatedTransitioning>
 
 -(void)SH_setPreferredInterfaceOrientationForPresentatationBlock:(SHNavigationControllerOrientationBlock)theBlock;
 
--(void)SH_setInteractiveTransitioningBlock:(SHNavigationControllerInteractiveTransitionBlock)theBlock;
+-(void)SH_setInteractiveControllerBlock:(SHNavigationControllerInteractiveControllerBlock)theBlock;
 
--(void)SH_setAnimatedTransitioningBlock:(SHNavigationControllerAnimatedTransitionBlock)theBlock;
+-(void)SH_setAnimatedControllerBlock:(SHNavigationControllerAnimatedControllerBlock)theBlock;
 
 #pragma mark - Getters
 
 @property(nonatomic,readonly) SHNavigationControllerBlock SH_blockWillShowViewController;
 @property(nonatomic,readonly) SHNavigationControllerBlock SH_blockDidShowViewController;
 @property(nonatomic,readonly) SHNavigationControllerOrientationBlock SH_blockInterfaceOrientationForPresentation;
-@property(nonatomic,readonly) SHNavigationControllerInteractiveTransitionBlock SH_blockInteractiveTransitioning;
-@property(nonatomic,readonly) SHNavigationControllerAnimatedTransitionBlock SH_blockAnimatedTransitioning;
+@property(nonatomic,readonly) SHNavigationControllerInteractiveControllerBlock SH_blockInteractiveController;
+@property(nonatomic,readonly) SHNavigationControllerAnimatedControllerBlock SH_blockAnimatedController;
 
 
 @end

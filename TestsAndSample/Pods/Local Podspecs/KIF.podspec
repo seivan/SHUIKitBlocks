@@ -14,21 +14,20 @@ Pod::Spec.new do |s|
   s.subspec 'SenTestingKit' do |sentest|
     sentest.framework = 'SenTestingKit'
     sentest.dependency 'KIF/Core'
-    sentest.prefix_header_contents = <<-EOS
-#import <SenTestingKit/SenTestingKit.h>
-EOS
+    sentest.xcconfig = { 'OTHER_CFLAGS' => '-DKIF_SENTEST' }
+    sentest.source_files = 'Additions/SenTestCase-KIFAdditions.{h,m}'
   end
 
   s.subspec 'XCTest' do |xctest|
     xctest.framework = 'XCTest'
     xctest.dependency 'KIF/Core'
-    xctest.prefix_header_contents = <<-EOS
-#import <XCTest/XCTest.h>
-EOS
+    xctest.xcconfig = { 'OTHER_CFLAGS' => '-DKIF_XCTEST' }
+    xctest.source_files = 'Additions/XCTestCase-KIFAdditions.{h,m}'
   end
 
   s.subspec 'Core' do |core|
     core.source_files = 'Classes', 'Additions'
     core.public_header_files = 'Classes/**/*.h', 'Additions/**/*-KIFAdditions.h'
+    core.exclude_files = 'Additions/SenTestCase-KIFAdditions.{h,m}', 'Additions/XCTestCase-KIFAdditions.{h,m}'
   end
 end

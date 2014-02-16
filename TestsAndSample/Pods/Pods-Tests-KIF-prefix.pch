@@ -5,5 +5,4 @@
 #import "Pods-Tests-environment.h"
 #import <CoreGraphics/CoreGraphics.h>
 
-#import <XCTest/XCTest.h>
-
+#import <CoreGraphics/CoreGraphics.h>
