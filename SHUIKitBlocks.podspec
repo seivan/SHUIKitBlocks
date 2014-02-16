@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   name           = "SHUIKitBlocks"
   url            = "https://github.com/seivan/#{name}"
   git_url        = "#{url}.git"
-  version        = "2.2.0"
+  version        = "2.3.0"
   source_files   = "#{name}/**/*.{h,m}"
 
   s.name         = name
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
                     Contains: 
                     * SHAlertViewBlocks             => UIAlertView
                     * SHControlBlocks               => UIControl
-                    * SHSegueBlocks                 => UIStoryboardSegue
+                    * SHSegueBlocks                 => UIViewController
                     * SHNavigationControllerBlocks  => UINavigationController
                     * SHWebViewBlocks               => UIWebView
                     * SHPopoverControllerBlocks     => UIPopoverController
@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
                     * SHTextFieldBlocks             => UITextField
                     * SHTextViewBlocks              => UITextView 
                     * SHTabBarControllerBlocks      => UITabBarController
+                    * SHTransitionBlocks            => UIViewController
 
                     Summary:
                     * Swizzle and junk free
@@ -58,6 +59,7 @@ Pod::Spec.new do |s|
   s.dependency  "SHTextFieldBlocks",             '~> 1.1.0'
   s.dependency  "SHTextViewBlocks",              '~> 1.1.0'
   s.dependency  "SHWebViewBlocks",               '~> 1.3.0'
+  s.dependency  "SHTransitionBlocks",            '~> 1.0.0'
   
   s.platform  = :ios, "7.0"
   s.source_files = source_files

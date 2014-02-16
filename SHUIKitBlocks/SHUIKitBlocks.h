@@ -11,3 +11,4 @@
 #import "UITextField+SHTextFieldBlocks.h"
 #import "UITextView+SHTextViewBlocks.h"
 #import "UITabBarController+SHTabBarControllerBlocks.h"
+#import "UIViewController+SHTransitionBlocks.h"

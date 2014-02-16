@@ -18,8 +18,12 @@ The blocks are automatically removed once they UITabBarController is gone, so it
 
 ##Installation
 
+Installation
+------------
+
 ```ruby
-pod 'SHTabBarControllerBlocks'
+pod 'SHTabBarControllerBlocks' 
+pod 'SHTabBarControllerBlocks', '~> 1.1.0' # for iOS 6
 ```
 
 ##Setup
@@ -41,6 +45,7 @@ or
 #### Properties
 
 ```objective-c
+
 #pragma mark - Block Defintions
 typedef BOOL (^SHTabBarControllerPredicateBlock)(UITabBarController  * theTabBarController,
 UIViewController * theViewController);
@@ -55,6 +60,22 @@ typedef void (^SHTabBarControllerCustomizingWithChangeBlock)(UITabBarController 
 NSArray * theViewControllers,
 BOOL      isChanged);
 
+typedef id<UIViewControllerInteractiveTransitioning>
+(^SHTabBarControllerInteractiveControllerBlock)(UITabBarController * tabBarController,
+                                                id<UIViewControllerAnimatedTransitioning> animationController
+                                                );
+
+typedef id<UIViewControllerAnimatedTransitioning>
+(^SHTabBarControllerAnimatedControllerBlock) (UITabBarController * tabBarController,
+                                              UIViewController * fromVC,
+                                              UIViewController * toVC
+                                              );
+
+
+
+@interface UITabBarController (SHTabBarControllerBlocks)
+
+
 
 #pragma mark - Properties
 
@@ -64,15 +85,21 @@ BOOL      isChanged);
 -(void)SH_setWillBeginCustomizingViewControllersBlock:(SHTabBarControllerCustomizingBlock)theBlock;
 -(void)SH_setWillEndCustomizingViewControllersBlock:(SHTabBarControllerCustomizingWithChangeBlock)theBlock;
 -(void)SH_setDidEndCustomizingViewControllersBlock:(SHTabBarControllerCustomizingWithChangeBlock)theBlock;
+-(void)SH_setInteractiveControllerBlock:(SHTabBarControllerInteractiveControllerBlock)theBlock;
+-(void)SH_setAnimatedControllerBlock:(SHTabBarControllerAnimatedControllerBlock)theBlock;
 
 
 
 #pragma mark - Getters
--(SHTabBarControllerPredicateBlock)SH_blockShouldSelectViewController;
--(SHTabBarControllerBlock)SH_blockDidSelectViewController;
--(SHTabBarControllerCustomizingBlock)SH_blockWillBeginCustomizingViewControllers;
--(SHTabBarControllerCustomizingWithChangeBlock)SH_blockWillEndCustomizingViewControllers;
--(SHTabBarControllerCustomizingWithChangeBlock)SH_blockDidEndCustomizingViewControllers;
+@property(nonatomic,readonly) SHTabBarControllerPredicateBlock SH_blockShouldSelectViewController;
+@property(nonatomic,readonly) SHTabBarControllerBlock SH_blockDidSelectViewController;
+@property(nonatomic,readonly) SHTabBarControllerCustomizingBlock SH_blockWillBeginCustomizingViewControllers;
+@property(nonatomic,readonly) SHTabBarControllerCustomizingWithChangeBlock SH_blockWillEndCustomizingViewControllers;
+@property(nonatomic,readonly) SHTabBarControllerCustomizingWithChangeBlock SH_blockDidEndCustomizingViewControllers;
+@property(nonatomic,readonly) SHTabBarControllerInteractiveControllerBlock SH_blockInteractiveController;
+@property(nonatomic,readonly) SHTabBarControllerAnimatedControllerBlock SH_blockAnimatedController;
+
+@end
 
 ```
 
