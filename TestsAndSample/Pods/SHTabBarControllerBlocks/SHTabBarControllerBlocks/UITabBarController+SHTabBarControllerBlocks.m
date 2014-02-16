@@ -8,7 +8,8 @@ SHStaticConstString(SH_blockDidSelectViewController);
 SHStaticConstString(SH_blockWillBeginCustomizingViewControllers);
 SHStaticConstString(SH_blockWillEndCustomizingViewControllers);
 SHStaticConstString(SH_blockDidEndCustomizingViewControllers);
-
+SHStaticConstString(SH_blockInteractiveController);
+SHStaticConstString(SH_blockAnimatedController);
 
 
 
@@ -109,6 +110,30 @@ SHStaticConstString(SH_blockDidEndCustomizingViewControllers);
   
 }
 
+- (id <UIViewControllerInteractiveTransitioning>)tabBarController:(UITabBarController *)tabBarController
+                      interactionControllerForAnimationController: (id <UIViewControllerAnimatedTransitioning>)animationController NS_AVAILABLE_IOS(7_0); {
+
+  SHTabBarControllerInteractiveControllerBlock block = [[self mapTableForObject:tabBarController]
+                                                        objectForKey:SH_blockInteractiveController];
+  id<UIViewControllerInteractiveTransitioning> transition = nil;
+  if(block) transition = block(tabBarController, animationController);
+  return transition;
+  
+}
+
+- (id <UIViewControllerAnimatedTransitioning>)tabBarController:(UITabBarController *)tabBarController
+            animationControllerForTransitionFromViewController:(UIViewController *)fromVC
+                                              toViewController:(UIViewController *)toVC  NS_AVAILABLE_IOS(7_0); {
+
+  SHTabBarControllerAnimatedControllerBlock block = [[self mapTableForObject:tabBarController]
+                                                        objectForKey:SH_blockAnimatedController];
+  id<UIViewControllerAnimatedTransitioning> transition = nil;
+  if(block) transition = block(tabBarController, fromVC, toVC);
+  return transition;
+  
+}
+
+
 
 
 @end
@@ -145,6 +170,14 @@ SHStaticConstString(SH_blockDidEndCustomizingViewControllers);
   [self setBlock:theBlock forKey:SH_blockDidEndCustomizingViewControllers]; 
 }
 
+-(void)SH_setInteractiveControllerBlock:(SHTabBarControllerInteractiveControllerBlock)theBlock; {
+  [self setBlock:theBlock forKey:SH_blockInteractiveController];
+}
+
+-(void)SH_setAnimatedControllerBlock:(SHTabBarControllerAnimatedControllerBlock)theBlock;{
+  [self setBlock:theBlock forKey:SH_blockAnimatedController];
+}
+
 
 #pragma mark - Getters
 -(SHTabBarControllerPredicateBlock)SH_blockShouldSelectViewController; {
@@ -165,6 +198,15 @@ SHStaticConstString(SH_blockDidEndCustomizingViewControllers);
 
 -(SHTabBarControllerCustomizingWithChangeBlock)SH_blockDidEndCustomizingViewControllers; {
   return [self.mapBlocks objectForKey:SH_blockDidEndCustomizingViewControllers];
+}
+
+
+-(SHTabBarControllerInteractiveControllerBlock)SH_blockInteractiveController; {
+  return [self.mapBlocks objectForKey:SH_blockInteractiveController];
+}
+
+-(SHTabBarControllerAnimatedControllerBlock)SH_blockAnimatedController; {
+  return [self.mapBlocks objectForKey:SH_blockAnimatedController];
 }
 
 
