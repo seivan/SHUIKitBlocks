@@ -98,4 +98,10 @@
   
 }
 
+-(void)testSHTransitionBlocks; {
+  XCTAssertTrue([UIViewController.new
+                 respondsToSelector:@selector(SH_animatedTransition)]);
+  
+}
+
 @end
