@@ -8,9 +8,9 @@
 ##### Prefixed Blocks for UIKit on categories __without__ libffi and swizzling
 
 
-`SHUIKitBlocks` allows you to use blocks instead of delegates for entire UIKit without any hacks or libffi dependencies. 
+`SHUIKitBlocks` allows you to use blocks instead of delegates for most of UIKit without any hacks or libffi dependencies. Works perfectly on 64bit (iPhone 5s) 
 
-> This pod is part of a many components covering to plug the holes missing from Foundation, UIKit, CoreLocation, GameKit, MapKit and other aspects of an iOS application's architecture. 
+> This pod is part of a many components covering to plug the holes missing from Foundation, UIKit, CoreLocation, GameKit, MapKit and other aspects of an iOS application's architecture. Other components are: 
 
 - [SHFoundationAdditions](https://github.com/seivan/SHFoundationAdditions)
 - [SHGameCenter](https://github.com/seivan/SHGameCenter)
