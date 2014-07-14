@@ -1,8 +1,10 @@
 # SHUIKitBlocks
 
-[![Build Status](https://travis-ci.org/seivan/SHUIKitBlocks.svg?branch=master)](https://travis-ci.org/seivan/SHUIKitBlocks)
-[![Version](https://cocoapod-badges.herokuapp.com/v/SHUIKitBlocks/badge.png)](http://cocoadocs.org/docsets/SHUIKitBlocks)
-[![Platform](https://cocoapod-badges.herokuapp.com/p/SHUIKitBlocks/badge.png)](http://cocoadocs.org/docsets/SHUIKitBlocks)
+[![CI Status](https://img.shields.io/travis/seivan/SHUIKitBlocks.svg?style=flat)](https://travis-ci.org/seivan/SHUIKitBlocks)
+[![Version](https://img.shields.io/cocoapods/v/SHUIKitBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHUIKitBlocks)
+[![Platform](https://img.shields.io/cocoapods/p/SHUIKitBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHUIKitBlocks)
+[![License](https://img.shields.io/cocoapods/l/SHUIKitBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHUIKitBlocks)
+
 
 
 ##### Prefixed Blocks for UIKit on categories __without__ libffi and swizzling
