@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   name           = "SHUIKitBlocks"
   url            = "https://github.com/seivan/#{name}"
   git_url        = "#{url}.git"
-  version        = "2.3.1"
+  version        = "2.3.2"
   source_files   = "#{name}/**/*.{h,m}"
 
   s.name         = name
