@@ -1,8 +1,9 @@
 SHActionSheetBlocks
 ==========
-[![Build Status](https://travis-ci.org/seivan/SHActionSheetBlocks.png?branch=master)](https://travis-ci.org/seivan/SHActionSheetBlocks)
-[![Version](https://cocoapod-badges.herokuapp.com/v/SHActionSheetBlocks/badge.png?)](http://cocoadocs.org/docsets/SHActionSheetBlocks)
-[![Platform](https://cocoapod-badges.herokuapp.com/p/SHActionSheetBlocks/badge.png)](http://cocoadocs.org/docsets/SHActionSheetBlocks)
+[![CI Status](https://img.shields.io/travis/seivan/SHActionSheetBlocks.svg?style=flat)](https://travis-ci.org/seivan/SHActionSheetBlocks)
+[![Version](https://img.shields.io/cocoapods/v/SHActionSheetBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHActionSheetBlocks)
+[![Platform](https://img.shields.io/cocoapods/p/SHActionSheetBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHActionSheetBlocks)
+[![License](https://img.shields.io/cocoapods/l/SHActionSheetBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHActionSheetBlocks)
 
 > This pod is used by [`SHUIKitBlocks`](https://github.com/seivan/SHUIKitBlocks) as part of many components covering to plug the holes missing from Foundation, UIKit, CoreLocation, GameKit, MapKit and other aspects of an iOS application's architecture.
 

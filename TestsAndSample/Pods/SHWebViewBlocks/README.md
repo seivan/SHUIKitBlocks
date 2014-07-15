@@ -1,8 +1,9 @@
 SHWebViewBlocks
 ==========
-[![Build Status](https://travis-ci.org/seivan/SHWebViewBlocks.png?branch=master)](https://travis-ci.org/seivan/SHWebViewBlocks)
-[![Version](https://cocoapod-badges.herokuapp.com/v/SHWebViewBlocks/badge.png)](http://cocoadocs.org/docsets/SHWebViewBlocks)
-[![Platform](https://cocoapod-badges.herokuapp.com/p/SHWebViewBlocks/badge.png)](http://cocoadocs.org/docsets/SHWebViewBlocks)
+[![CI Status](https://img.shields.io/travis/seivan/SHWebViewBlocks.svg?style=flat)](https://travis-ci.org/seivan/SHWebViewBlocks)
+[![Version](https://img.shields.io/cocoapods/v/SHWebViewBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHWebViewBlocks)
+[![Platform](https://img.shields.io/cocoapods/p/SHWebViewBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHWebViewBlocks)
+[![License](https://img.shields.io/cocoapods/l/SHWebViewBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHWebViewBlocks)
 
 > This pod is used by [`SHUIKitBlocks`](https://github.com/seivan/SHUIKitBlocks) as part of many components covering to plug the holes missing from Foundation, UIKit, CoreLocation, GameKit, MapKit and other aspects of an iOS application's architecture.
 

@@ -1,8 +1,9 @@
 SHNavigationControllerBlocks
 ==========
-[![Build Status](https://travis-ci.org/seivan/SHNavigationControllerBlocks.png?branch=master)](https://travis-ci.org/seivan/SHNavigationControllerBlocks)
-[![Version](https://cocoapod-badges.herokuapp.com/v/SHNavigationControllerBlocks/badge.png)](http://cocoadocs.org/docsets/SHNavigationControllerBlocks)
-[![Platform](https://cocoapod-badges.herokuapp.com/p/SHNavigationControllerBlocks/badge.png)](http://cocoadocs.org/docsets/SHNavigationControllerBlocks)
+[![CI Status](https://img.shields.io/travis/seivan/SHNavigationControllerBlocks.svg?style=flat)](https://travis-ci.org/seivan/SHNavigationControllerBlocks)
+[![Version](https://img.shields.io/cocoapods/v/SHNavigationControllerBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHNavigationControllerBlocks)
+[![Platform](https://img.shields.io/cocoapods/p/SHNavigationControllerBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHNavigationControllerBlocks)
+[![License](https://img.shields.io/cocoapods/l/SHNavigationControllerBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHNavigationControllerBlocks)
 
 > This pod is used by [`SHUIKitBlocks`](https://github.com/seivan/SHUIKitBlocks) as part of many components covering to plug the holes missing from Foundation, UIKit, CoreLocation, GameKit, MapKit and other aspects of an iOS application's architecture.
 

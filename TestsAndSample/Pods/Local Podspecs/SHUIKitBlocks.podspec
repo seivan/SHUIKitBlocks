@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   name           = "SHUIKitBlocks"
   url            = "https://github.com/seivan/#{name}"
   git_url        = "#{url}.git"
-  version        = "2.2.0"
+  version        = "2.3.1"
   source_files   = "#{name}/**/*.{h,m}"
 
   s.name         = name
@@ -47,19 +47,19 @@ Pod::Spec.new do |s|
   s.source       = { :git => git_url, :tag => version}
   
 
-  s.dependency  "SHActionSheetBlocks",           '~> 2.3.0'
-  s.dependency  "SHAlertViewBlocks",             '~> 1.2.0'
-  s.dependency  "SHBarButtonItemBlocks",         '~> 1.2.0'
-  s.dependency  "SHControlBlocks",               '~> 1.2.0'
-  s.dependency  "SHGestureRecognizerBlocks",     '~> 1.1.0'
-  s.dependency  "SHNavigationControllerBlocks",  '~> 2.1.0'
-  s.dependency  "SHPopoverControllerBlocks",     '~> 1.2.0'
-  s.dependency  "SHSegueBlocks",                 '~> 1.2.2'
-  s.dependency  "SHTabBarControllerBlocks",      '~> 2.0.0'
-  s.dependency  "SHTextFieldBlocks",             '~> 1.1.0'
-  s.dependency  "SHTextViewBlocks",              '~> 1.1.0'
-  s.dependency  "SHWebViewBlocks",               '~> 1.3.0'
-  s.dependency  "SHTransitionBlocks",            '~> 1.0.0'
+  s.dependency  "SHActionSheetBlocks",           '~> 2.3.1'
+  s.dependency  "SHAlertViewBlocks",             '~> 1.2.1'
+  s.dependency  "SHBarButtonItemBlocks",         '~> 1.2.1'
+  s.dependency  "SHControlBlocks",               '~> 1.2.1'
+  s.dependency  "SHGestureRecognizerBlocks",     '~> 1.1.1'
+  s.dependency  "SHNavigationControllerBlocks",  '~> 2.1.1'
+  s.dependency  "SHPopoverControllerBlocks",     '~> 1.2.1'
+  s.dependency  "SHSegueBlocks",                 '~> 1.2.3'
+  s.dependency  "SHTabBarControllerBlocks",      '~> 2.0.1'
+  s.dependency  "SHTextFieldBlocks",             '~> 1.1.1'
+  s.dependency  "SHTextViewBlocks",              '~> 1.1.1'
+  s.dependency  "SHWebViewBlocks",               '~> 1.3.1'
+  s.dependency  "SHTransitionBlocks",            '~> 1.0.1'
   
   s.platform  = :ios, "7.0"
   s.source_files = source_files

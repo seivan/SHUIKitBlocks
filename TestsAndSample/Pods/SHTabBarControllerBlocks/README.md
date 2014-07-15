@@ -1,8 +1,9 @@
 #SHTabBarControllerBlocks
 
-[![Build Status](https://travis-ci.org/seivan/SHTabBarControllerBlocks.png?branch=master)](https://travis-ci.org/seivan/SHTabBarControllerBlocks)
-[![Version](https://cocoapod-badges.herokuapp.com/v/SHTabBarControllerBlocks/badge.png)](http://cocoadocs.org/docsets/SHTabBarControllerBlocks)
-[![Platform](https://cocoapod-badges.herokuapp.com/p/SHTabBarControllerBlocks/badge.png)](http://cocoadocs.org/docsets/SHTabBarControllerBlocks)
+[![CI Status](https://img.shields.io/travis/seivan/SHTabBarControllerBlocks.svg?style=flat)](https://travis-ci.org/seivan/SHTabBarControllerBlocks)
+[![Version](https://img.shields.io/cocoapods/v/SHTabBarControllerBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTabBarControllerBlocks)
+[![Platform](https://img.shields.io/cocoapods/p/SHTabBarControllerBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTabBarControllerBlocks)
+[![License](https://img.shields.io/cocoapods/l/SHTabBarControllerBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTabBarControllerBlocks)
 
 > This pod is used by [`SHUIKitBlocks`](https://github.com/seivan/SHUIKitBlocks) as part of many components covering to plug the holes missing from Foundation, UIKit, CoreLocation, GameKit, MapKit and other aspects of an iOS application's architecture.
 

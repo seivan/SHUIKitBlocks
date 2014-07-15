@@ -1,8 +1,9 @@
 #SHTextViewBlocks
 
-[![Build Status](https://travis-ci.org/seivan/SHTextViewBlocks.png?branch=master)](https://travis-ci.org/seivan/SHTextViewBlocks)
-[![Version](https://cocoapod-badges.herokuapp.com/v/SHTextViewBlocks/badge.png)](http://cocoadocs.org/docsets/SHTextViewBlocks)
-[![Platform](https://cocoapod-badges.herokuapp.com/p/SHTextViewBlocks/badge.png)](http://cocoadocs.org/docsets/SHTextViewBlocks)
+[![CI Status](https://img.shields.io/travis/seivan/SHTextViewBlocks.svg?style=flat)](https://travis-ci.org/seivan/SHTextViewBlocks)
+[![Version](https://img.shields.io/cocoapods/v/SHTextViewBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTextViewBlocks)
+[![Platform](https://img.shields.io/cocoapods/p/SHTextViewBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTextViewBlocks)
+[![License](https://img.shields.io/cocoapods/l/SHTextViewBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTextViewBlocks)
 
 > This pod is used by [`SHUIKitBlocks`](https://github.com/seivan/SHUIKitBlocks) as part of many components covering to plug the holes missing from Foundation, UIKit, CoreLocation, GameKit, MapKit and other aspects of an iOS application's architecture.
 

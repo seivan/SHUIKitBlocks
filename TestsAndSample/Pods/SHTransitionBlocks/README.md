@@ -1,8 +1,10 @@
 #SHTransitionBlocks
 
-[![Build Status](https://travis-ci.org/seivan/SHTransitionBlocks.png?branch=master)](https://travis-ci.org/seivan/SHTransitionBlocks)
-[![Version](https://cocoapod-badges.herokuapp.com/v/SHTransitionBlocks/badge.png)](http://cocoadocs.org/docsets/SHTransitionBlocks)
-[![Platform](https://cocoapod-badges.herokuapp.com/p/SHTransitionBlocks/badge.png)](http://cocoadocs.org/docsets/SHTransitionBlocks)
+[![CI Status](https://img.shields.io/travis/seivan/SHTransitionBlocks.svg?style=flat)](https://travis-ci.org/seivan/SHTransitionBlocks)
+[![Version](https://img.shields.io/cocoapods/v/SHTransitionBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTransitionBlocks)
+[![Platform](https://img.shields.io/cocoapods/p/SHTransitionBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTransitionBlocks)
+[![License](https://img.shields.io/cocoapods/l/SHTransitionBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTransitionBlocks)
+
 
 > This pod is used by [`SHUIKitBlocks`](https://github.com/seivan/SHUIKitBlocks) as part of many components covering to plug the holes missing from Foundation, UIKit, CoreLocation, GameKit, MapKit and other aspects of an iOS application's architecture.
 

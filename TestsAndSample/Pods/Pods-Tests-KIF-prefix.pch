@@ -4,5 +4,3 @@
 
 #import "Pods-Tests-environment.h"
 #import <CoreGraphics/CoreGraphics.h>
-
-#import <CoreGraphics/CoreGraphics.h>

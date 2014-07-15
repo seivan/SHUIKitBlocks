@@ -1,8 +1,9 @@
 SHPopoverControllerBlocks
 ==========
-[![Build Status](https://travis-ci.org/seivan/SHPopoverControllerBlocks.png?branch=master)](https://travis-ci.org/seivan/SHPopoverControllerBlocks)
-[![Version](https://cocoapod-badges.herokuapp.com/v/SHPopoverControllerBlocks/badge.png)](http://cocoadocs.org/docsets/SHPopoverControllerBlocks)
-[![Platform](https://cocoapod-badges.herokuapp.com/p/SHPopoverControllerBlocks/badge.png)](http://cocoadocs.org/docsets/SHPopoverControllerBlocks)
+[![CI Status](https://img.shields.io/travis/seivan/SHPopoverControllerBlocks.svg?style=flat)](https://travis-ci.org/seivan/SHPopoverControllerBlocks)
+[![Version](https://img.shields.io/cocoapods/v/SHPopoverControllerBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHPopoverControllerBlocks)
+[![Platform](https://img.shields.io/cocoapods/p/SHPopoverControllerBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHPopoverControllerBlocks)
+[![License](https://img.shields.io/cocoapods/l/SHPopoverControllerBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHPopoverControllerBlocks)
 
 > This pod is used by [`SHUIKitBlocks`](https://github.com/seivan/SHUIKitBlocks) as part of many components covering to plug the holes missing from Foundation, UIKit, CoreLocation, GameKit, MapKit and other aspects of an iOS application's architecture.
 
