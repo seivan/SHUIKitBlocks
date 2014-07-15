@@ -10,37 +10,37 @@
 #define COCOAPODS_POD_AVAILABLE_SHActionSheetBlocks
 #define COCOAPODS_VERSION_MAJOR_SHActionSheetBlocks 2
 #define COCOAPODS_VERSION_MINOR_SHActionSheetBlocks 3
-#define COCOAPODS_VERSION_PATCH_SHActionSheetBlocks 0
+#define COCOAPODS_VERSION_PATCH_SHActionSheetBlocks 1
 
 // SHAlertViewBlocks
 #define COCOAPODS_POD_AVAILABLE_SHAlertViewBlocks
 #define COCOAPODS_VERSION_MAJOR_SHAlertViewBlocks 1
 #define COCOAPODS_VERSION_MINOR_SHAlertViewBlocks 2
-#define COCOAPODS_VERSION_PATCH_SHAlertViewBlocks 0
+#define COCOAPODS_VERSION_PATCH_SHAlertViewBlocks 1
 
 // SHBarButtonItemBlocks
 #define COCOAPODS_POD_AVAILABLE_SHBarButtonItemBlocks
 #define COCOAPODS_VERSION_MAJOR_SHBarButtonItemBlocks 1
 #define COCOAPODS_VERSION_MINOR_SHBarButtonItemBlocks 2
-#define COCOAPODS_VERSION_PATCH_SHBarButtonItemBlocks 0
+#define COCOAPODS_VERSION_PATCH_SHBarButtonItemBlocks 1
 
 // SHControlBlocks
 #define COCOAPODS_POD_AVAILABLE_SHControlBlocks
 #define COCOAPODS_VERSION_MAJOR_SHControlBlocks 1
 #define COCOAPODS_VERSION_MINOR_SHControlBlocks 2
-#define COCOAPODS_VERSION_PATCH_SHControlBlocks 0
+#define COCOAPODS_VERSION_PATCH_SHControlBlocks 1
 
 // SHGestureRecognizerBlocks
 #define COCOAPODS_POD_AVAILABLE_SHGestureRecognizerBlocks
 #define COCOAPODS_VERSION_MAJOR_SHGestureRecognizerBlocks 1
 #define COCOAPODS_VERSION_MINOR_SHGestureRecognizerBlocks 1
-#define COCOAPODS_VERSION_PATCH_SHGestureRecognizerBlocks 0
+#define COCOAPODS_VERSION_PATCH_SHGestureRecognizerBlocks 1
 
 // SHNavigationControllerBlocks
 #define COCOAPODS_POD_AVAILABLE_SHNavigationControllerBlocks
 #define COCOAPODS_VERSION_MAJOR_SHNavigationControllerBlocks 2
 #define COCOAPODS_VERSION_MINOR_SHNavigationControllerBlocks 1
-#define COCOAPODS_VERSION_PATCH_SHNavigationControllerBlocks 0
+#define COCOAPODS_VERSION_PATCH_SHNavigationControllerBlocks 1
 
 // SHObjectUserInfo
 #define COCOAPODS_POD_AVAILABLE_SHObjectUserInfo
@@ -52,47 +52,47 @@
 #define COCOAPODS_POD_AVAILABLE_SHPopoverControllerBlocks
 #define COCOAPODS_VERSION_MAJOR_SHPopoverControllerBlocks 1
 #define COCOAPODS_VERSION_MINOR_SHPopoverControllerBlocks 2
-#define COCOAPODS_VERSION_PATCH_SHPopoverControllerBlocks 0
+#define COCOAPODS_VERSION_PATCH_SHPopoverControllerBlocks 1
 
 // SHSegueBlocks
 #define COCOAPODS_POD_AVAILABLE_SHSegueBlocks
 #define COCOAPODS_VERSION_MAJOR_SHSegueBlocks 1
 #define COCOAPODS_VERSION_MINOR_SHSegueBlocks 2
-#define COCOAPODS_VERSION_PATCH_SHSegueBlocks 2
+#define COCOAPODS_VERSION_PATCH_SHSegueBlocks 3
 
 // SHTabBarControllerBlocks
 #define COCOAPODS_POD_AVAILABLE_SHTabBarControllerBlocks
 #define COCOAPODS_VERSION_MAJOR_SHTabBarControllerBlocks 2
 #define COCOAPODS_VERSION_MINOR_SHTabBarControllerBlocks 0
-#define COCOAPODS_VERSION_PATCH_SHTabBarControllerBlocks 0
+#define COCOAPODS_VERSION_PATCH_SHTabBarControllerBlocks 1
 
 // SHTextFieldBlocks
 #define COCOAPODS_POD_AVAILABLE_SHTextFieldBlocks
 #define COCOAPODS_VERSION_MAJOR_SHTextFieldBlocks 1
 #define COCOAPODS_VERSION_MINOR_SHTextFieldBlocks 1
-#define COCOAPODS_VERSION_PATCH_SHTextFieldBlocks 0
+#define COCOAPODS_VERSION_PATCH_SHTextFieldBlocks 1
 
 // SHTextViewBlocks
 #define COCOAPODS_POD_AVAILABLE_SHTextViewBlocks
 #define COCOAPODS_VERSION_MAJOR_SHTextViewBlocks 1
 #define COCOAPODS_VERSION_MINOR_SHTextViewBlocks 1
-#define COCOAPODS_VERSION_PATCH_SHTextViewBlocks 0
+#define COCOAPODS_VERSION_PATCH_SHTextViewBlocks 1
 
 // SHTransitionBlocks
 #define COCOAPODS_POD_AVAILABLE_SHTransitionBlocks
 #define COCOAPODS_VERSION_MAJOR_SHTransitionBlocks 1
 #define COCOAPODS_VERSION_MINOR_SHTransitionBlocks 0
-#define COCOAPODS_VERSION_PATCH_SHTransitionBlocks 0
+#define COCOAPODS_VERSION_PATCH_SHTransitionBlocks 1
 
 // SHUIKitBlocks
 #define COCOAPODS_POD_AVAILABLE_SHUIKitBlocks
 #define COCOAPODS_VERSION_MAJOR_SHUIKitBlocks 2
-#define COCOAPODS_VERSION_MINOR_SHUIKitBlocks 2
-#define COCOAPODS_VERSION_PATCH_SHUIKitBlocks 0
+#define COCOAPODS_VERSION_MINOR_SHUIKitBlocks 3
+#define COCOAPODS_VERSION_PATCH_SHUIKitBlocks 1
 
 // SHWebViewBlocks
 #define COCOAPODS_POD_AVAILABLE_SHWebViewBlocks
 #define COCOAPODS_VERSION_MAJOR_SHWebViewBlocks 1
 #define COCOAPODS_VERSION_MINOR_SHWebViewBlocks 3
-#define COCOAPODS_VERSION_PATCH_SHWebViewBlocks 0
+#define COCOAPODS_VERSION_PATCH_SHWebViewBlocks 1
 

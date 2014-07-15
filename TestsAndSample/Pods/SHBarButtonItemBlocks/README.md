@@ -1,8 +1,9 @@
 SHBarButtonItemBlocks
 ==========
-[![Build Status](https://travis-ci.org/seivan/SHBarButtonItemBlocks.png?branch=master)](https://travis-ci.org/seivan/SHBarButtonItemBlocks)
-[![Version](https://cocoapod-badges.herokuapp.com/v/SHBarButtonItemBlocks/badge.png)](http://cocoadocs.org/docsets/SHBarButtonItemBlocks)
-[![Platform](https://cocoapod-badges.herokuapp.com/p/SHBarButtonItemBlocks/badge.png)](http://cocoadocs.org/docsets/SHBarButtonItemBlocks)
+[![CI Status](https://img.shields.io/travis/seivan/SHBarButtonItemBlocks.svg?style=flat)](https://travis-ci.org/seivan/SHBarButtonItemBlocks)
+[![Version](https://img.shields.io/cocoapods/v/SHBarButtonItemBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHBarButtonItemBlocks)
+[![Platform](https://img.shields.io/cocoapods/p/SHBarButtonItemBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHBarButtonItemBlocks)
+[![License](https://img.shields.io/cocoapods/l/SHBarButtonItemBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHBarButtonItemBlocks)
 
 > This pod is used by [`SHUIKitBlocks`](https://github.com/seivan/SHUIKitBlocks) as part of many components covering to plug the holes missing from Foundation, UIKit, CoreLocation, GameKit, MapKit and other aspects of an iOS application's architecture.
 

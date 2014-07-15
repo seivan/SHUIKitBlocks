@@ -1,8 +1,9 @@
 #SHTextFieldBlocks
 
-[![Build Status](https://travis-ci.org/seivan/SHTextFieldBlocks.png?branch=master)](https://travis-ci.org/seivan/SHTextFieldBlocks)
-[![Version](https://cocoapod-badges.herokuapp.com/v/SHTextFieldBlocks/badge.png)](http://cocoadocs.org/docsets/SHTextFieldBlocks)
-[![Platform](https://cocoapod-badges.herokuapp.com/p/SHTextFieldBlocks/badge.png)](http://cocoadocs.org/docsets/SHTextFieldBlocks)
+[![CI Status](https://img.shields.io/travis/seivan/SHTextFieldBlocks.svg?style=flat)](https://travis-ci.org/seivan/SHTextFieldBlocks)
+[![Version](https://img.shields.io/cocoapods/v/SHTextFieldBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTextFieldBlocks)
+[![Platform](https://img.shields.io/cocoapods/p/SHTextFieldBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTextFieldBlocks)
+[![License](https://img.shields.io/cocoapods/l/SHTextFieldBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTextFieldBlocks)
 
 > This pod is used by [`SHUIKitBlocks`](https://github.com/seivan/SHUIKitBlocks) as part of many components covering to plug the holes missing from Foundation, UIKit, CoreLocation, GameKit, MapKit and other aspects of an iOS application's architecture.
 
