@@ -1,3 +1,4 @@
+Deprecated please use http://[RxCocoa](https://github.com/ReactiveX/RxSwift)
 # SHUIKitBlocks
 
 [![CI Status](https://img.shields.io/travis/seivan/SHUIKitBlocks.svg?style=flat)](https://travis-ci.org/seivan/SHUIKitBlocks)
