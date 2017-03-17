@@ -1,4 +1,4 @@
-Deprecated please use [RxCocoa](https://github.com/ReactiveX/RxSwift)
+Deprecated please use [RxCocoa with RxSwift](https://github.com/ReactiveX/RxSwift)
 # SHUIKitBlocks
 
 [![CI Status](https://img.shields.io/travis/seivan/SHUIKitBlocks.svg?style=flat)](https://travis-ci.org/seivan/SHUIKitBlocks)
@@ -20,13 +20,13 @@ Deprecated please use [RxCocoa](https://github.com/ReactiveX/RxSwift)
 - [SHMessageUIBlocks](https://github.com/seivan/SHMessageUIBlocks)
 
 
-##Install
+## Install
 ```ruby
 pod 'SHUIKitBlocks' #for iOS 7
 pod 'SHUIKitBlocks', '~> 1.6.0' # for iOS 6
 ```
 
-##Dependency Status
+## Dependency Status
 
 | Library        | Tests           | Version  | Platform  | License |
 | ------------- |:-------------:| -----:|  -----:| -----:| -----:|  
@@ -44,7 +44,7 @@ pod 'SHUIKitBlocks', '~> 1.6.0' # for iOS 6
 | [SHTabBarControllerBlocks](https://github.com/seivan/SHTabBarControllerBlocks) | [![CI Status](https://img.shields.io/travis/seivan/SHTabBarControllerBlocks.svg?style=flat)](https://travis-ci.org/seivan/SHTabBarControllerBlocks) | [![Version](https://img.shields.io/cocoapods/v/SHTabBarControllerBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTabBarControllerBlocks) | [![Platform](https://img.shields.io/cocoapods/p/SHTabBarControllerBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTabBarControllerBlocks) | [![License](https://img.shields.io/cocoapods/l/SHTabBarControllerBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTabBarControllerBlocks)
 | [SHTransitionBlocks](https://github.com/seivan/SHTransitionBlocks) | [![CI Status](https://img.shields.io/travis/seivan/SHTransitionBlocks.svg?style=flat)](https://travis-ci.org/seivan/SHTransitionBlocks) | [![Version](https://img.shields.io/cocoapods/v/SHTransitionBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTransitionBlocks) | [![Platform](https://img.shields.io/cocoapods/p/SHTransitionBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTransitionBlocks) | [![License](https://img.shields.io/cocoapods/l/SHTransitionBlocks.svg?style=flat)](http://cocoadocs.org/docsets/SHTransitionBlocks)
 
-##Import
+## Import
 
 >Per Library
 
@@ -58,7 +58,7 @@ pod 'SHUIKitBlocks', '~> 1.6.0' # for iOS 6
 #import "SHUIKitBlocks.h"
 ```
 
-##Contact
+## Contact
 
 
 If you end up using SHUIKitBlocks in a project, I'd love to hear about it.
@@ -66,7 +66,7 @@ If you end up using SHUIKitBlocks in a project, I'd love to hear about it.
 email: [seivan.heidari@icloud.com](mailto:seivan.heidari@icloud.com)  
 twitter: [@seivanheidari](https://twitter.com/seivanheidari)
 
-##License
+## License
 
 SHUIKitBlocks is © 2013 [Seivan](https://www.github.com/seivan) and may be freely
 distributed under the [MIT license](https://opensource.org/licenses/MIT).
